@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* S-Core_Dream, sans-serif */
+@font-face {
+    font-family: 'S-Core-Dream-L';
+    src: url('S-CoreDream-3Light.woff2') format('woff2'),
+        url('S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:'S-CoreDream-R';
+    src: url('S-CoreDream-4Regular.woff2') format('woff2'),
+    url('S-CoreDream-4Regular.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
