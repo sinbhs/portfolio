@@ -2,11 +2,14 @@
 
 /* 폰트 설정 */
 body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
-header, h1, h2, .skill_others h3,footer{font-family:'Montserrat', serif;}
+header, h2,footer{font-family:'Montserrat', serif;}
 #about .title h3 {font-family:'Jost', sans-serif;}
-
+ul {list-style:none; padding:0; margin:0;}
+a {text-decoration: none; color:inherit;}
+h2 {margin:0; font-weight: bold;}
+p {margin:0;}
 /* --------------- mobile screen --------------- */
-.container {background-color: #F9F8FA; position: relative; z-index: 10;}
+.container {width: 100%; height:100vh; background-color: #F9F8FA; position: relative; z-index: 10; overflow: hidden;}
 /************ header ************/
 header {width: 100%; font-size:1.25rem; text-transform: capitalize; position: fixed; top:0; left:0; z-index: 100; transition:500ms; border-bottom:1px solid #ddd; background-color: #f9f8fa94;}
 header.scroll-down nav {background-color: #F9F8FA;}
@@ -48,16 +51,66 @@ nav ul {display:none;}
 /* menu overlay */
 .overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
 .overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
-.overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:bold; text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
+.overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:700; text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
 .overlay ul li a:hover {color:#000;}
 
+/************ contents ************/
+.container .contents {text-align: center;}
+/* contact left */
+.contact_left {height:100vh;}
+.container .contents .contact_left .box-image {width:100%; height:100vh; background:url(images/contactBg.jpg) center/cover; position: absolute; z-index:7;}
+.container .contents .contact_left .box-image p {font-size: 16px; padding:25vh 10% 0;}
+.container .contents .contact_left .box-image p span {display: none;}
+/* contact right */
+.contact_right {height:100vh; position: absolute; top:0; left:0; z-index: 9;}
+.right1 {height:45vh; font-family: 'Montserrat',sans-serif; display: flex; flex-direction: column; justify-content: space-around;}
+.right1 div {cursor: pointer;}
+.right1 h2 {color:#8f8f8f; margin-bottom:8px; font-size:15px; text-transform: uppercase;}
+.contact_right a, .contact_right span {font-size:25px; line-height:1.4; font-weight: bold; color:transparent; -webkit-text-stroke: 1px #004be2; transition:.3s;}
+.container .contents .contact_right .right1 div:hover span, .container .contents .contact_right .right1 div:hover a{color:#004be2;}
+.container .contents .email p {color:#000; -webkit-text-stroke: 0;}
+.container .contents .contact_right {width: 100%; height:100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; overflow: hidden;}
 
-/************ footer ************/
-footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5;}
-footer .return_top {text-align:left;}
-footer .footer_copyright {position: absolute; left:50%; transform:translateX(-50%);}
-footer .gitblog_link a {height:30px;}
-footer .gitblog_link span {display: none;}
-footer .gitblog_link img {width:30px;}
-/*** return-top btn ***/
-.return_top {color:#fff; cursor: pointer; text-transform: uppercase;}
+/* --------------- tablet screen --------------- */
+@media screen and (min-width:768px) {
+    nav {height:50px;}
+    .menu_icon {top:11px;}
+    h2 {font-size:2.188rem;}
+    h3 {font-size:1.375rem;}
+    .container .contents .contact_left .box-image p {font-size:23px;}
+    .right1 h2 {font-size:25px;}
+    .contact_right a, .contact_right span {font-size:35px;}
+}
+
+/* --------------- pc screen --------------- */
+@media screen and (min-width:1440px) {
+    p {font-size:16px;}
+    /****** navigation ******/
+    header {border-bottom:none; background-color:transparent; padding:15px 0;}
+    header.scroll-down nav {background-color: transparent;}
+    nav ul {display: block;}
+    /* nav_list .gnb */
+    nav ul {padding:0; margin:0; list-style:none; display: flex;}
+    nav ul li a {margin-left:30px;}
+    nav ul li a {text-decoration:none; color:#000; position: relative; display:inline-block;}
+    /* li:hover highlighter effect */
+    nav ul li a::after {content:''; display:block; width:100%; height:0.4em; background:#90b7f0; position:absolute; bottom:0.15em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
+    nav ul li:nth-child(2) a::after {transform:scaleX(1);}
+    nav ul li a:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    }
+    .menu_icon {display:none;}
+    /****** contents ******/
+    .container .contents {display: flex; margin:0 5%;}
+    .container .contents > div {width:50%;}
+    .contact_left {display: flex; justify-content: center; align-items: center;}
+    .container .contents .contact_left .box-image {width:70vh; height:70vh; position:static; display: flex; justify-content: center; align-items: center;}
+    .container .contents .contact_left .box-image p {padding:0; line-height: 1.5;}
+    .container .contents .contact_left .box-image p span {display: block;}
+    .container .contents .contact_right {position: static; width:50%;}
+    .right1 {height:55vh;}
+    .container .contents .email p, .contact_right a, .contact_right span {font-size:40px;}
+}
