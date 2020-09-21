@@ -3,9 +3,9 @@
 
 *Jiwoo's Portfolio : UI/UX Designer & Web Publisher Portfolio*
 
-### About
-- 이곳은 **개인 포트폴리오 저장소**입니다. &#10024;
-- 제 소개와 작업물들을 볼 수 있는 사이트입니다.
+### About this repository
+- 이곳은 **개인 포트폴리오를 모아둔 저장소**입니다. &#10024;
+- 제 소개와 포폴 작업물들을 모아 볼 수 있는 사이트입니다.
 
 
 ### Contact
