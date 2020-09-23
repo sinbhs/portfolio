@@ -1,5 +1,5 @@
 // mobile, tablet menu ovelay
-$(document).ready(function(){
+$(function(){
     $('.overlay').hide();
     $('.menu_icon').click(function(){
         $(this).toggleClass('active')
@@ -12,4 +12,15 @@ $(document).ready(function(){
             $('.overlay').slideUp();
         }
     });
+    //타이핑 이펙트
+    var typewriter = new Typewriter('#typewriter',{
+        loop:true
+    })
+    typewriter.typeString('I code and design websites.')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('And I 💗 it !')
+    .pauseFor(3000)
+    .deleteAll()
+    .start();
 });
