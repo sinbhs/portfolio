@@ -95,7 +95,7 @@ nav ul {display:none;}
     nav ul li a {text-decoration:none; color:#000; position: relative; display:inline-block;}
     /* li:hover highlighter effect */
     nav ul li a::after {content:''; display:block; width:100%; height:0.4em; background:#90b7f0; position:absolute; bottom:0.15em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
-    nav ul li:nth-child(2) a::after {transform:scaleX(1);}
+    nav ul li:last-child a::after {transform:scaleX(1);}
     nav ul li a:hover::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
