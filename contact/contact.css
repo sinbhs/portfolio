@@ -112,5 +112,6 @@ nav ul {display:none;}
     .container .contents .contact_left .box-image p span {display: block;}
     .container .contents .contact_right {position: static; width:50%;}
     .right1 {height:55vh;}
+    .contact_right a, .contact_right span {transition:700ms;}
     .container .contents .email p, .contact_right a, .contact_right span {font-size:40px;}
 }
