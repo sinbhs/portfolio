@@ -17,10 +17,10 @@ $(function(){
         loop:true
     })
     typewriter.typeString('I code and design websites.')
-    .pauseFor(2500)
+    .pauseFor(2000)
     .deleteAll()
-    .typeString('And I 💗 it !')
-    .pauseFor(3000)
+    .typeString('And I love it !')
+    .pauseFor(2500)
     .deleteAll()
     .start();
 });
