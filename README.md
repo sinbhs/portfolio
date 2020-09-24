@@ -1,5 +1,5 @@
 # README
-[Portfolio link](sinbhs.github.io/portfolio)
+[Portfolio](https://sinbhs.github.io/portfolio)
 
 *Jiwoo's Portfolio : UI/UX Designer & Web Publisher Portfolio*
 
