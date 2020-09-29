@@ -62,14 +62,15 @@ ul {list-style:none; padding:0; margin:0;}
 .title p:nth-of-type(2) {margin-bottom:50px;}
 /* about_info */
 #about {padding:10vh 5.3333% 0;}
+#about h2 {font-weight: 600;}
 .about_info section {padding:30px 0;}
 .about_info ul li {line-height:1.6; font-size:0.875rem;}
 .about_info .date {margin-right:12px; color:#333;}
 
 /**** skills ****/
 #skills {padding:0 5.3333%;}
-#skills .skillBgTxt, #skills .skillBgTxt2 {text-align:center; font-size:2rem; font-weight: 500; color:transparent; -webkit-text-stroke: 1px #004be2b0;/*text-shadow: -1px -1px 0 #90b7f0, 1px -1px 0 #90b7f0, -1px 1px 0 #90b7f0, 1px 1px 0 #90b7f0; */ padding:55px 0 45px; font-family:'Montserrat',sans-serif;}
-#skills h2 {position: relative; margin:80px 0 0;}
+#skills .skillBgTxt, #skills .skillBgTxt2 {text-align:center; font-size:2rem; font-weight: bold; color:transparent; -webkit-text-stroke: 1px #004be2b0;/*text-shadow: -1px -1px 0 #90b7f0, 1px -1px 0 #90b7f0, -1px 1px 0 #90b7f0, 1px 1px 0 #90b7f0; */ padding:55px 0 45px; font-family:'Montserrat',sans-serif;}
+#skills h2 {position: relative; margin:80px 0 0; font-weight: 600;}
 #skills h2::before {content:''; display:block; width:2em; height:0.1em; background-color: #004be2; border-radius:0.3em; position:absolute; top:-50%; left:50%; margin-left:-1em;}
 /* skill1 3가지 */
 #skills #skill1 {margin-bottom:130px;}
@@ -83,7 +84,7 @@ ul {list-style:none; padding:0; margin:0;}
 #skills #skill2 .skill_list {width:100%; max-width:450px;}
 /* skill_list */
 .skill_list li {margin-bottom:20px;}
-#skills #skill2 .skill_list li .txt .list_title{font-family:'Montserrat',sans-serif; font-weight:bold; color:#004be2; font-size:1rem;}
+#skills #skill2 .skill_list li .txt .list_title{font-family:'Montserrat',sans-serif; font-weight:600; color:#004be2; font-size:1rem;}
 #skills #skill2 .skill_list li .txt .title {font-size:14px;}
 #skills #skill2 .skill_list li .txt .caption {font-size:11px; margin:3px 5px 0 8px;}
 #skills #skill2 .skill_list li .txt .percentage {font-size:11px; float:right; margin:4px 0 0;}
@@ -119,7 +120,7 @@ ul {list-style:none; padding:0; margin:0;}
     }
 /* skill_others */
 .contents #skills .skill_others section {margin-bottom:30px;}
-.contents #skills .skill_others h3 {color:#004be2; font-size:1rem; text-transform: uppercase;}
+.contents #skills .skill_others h3 {color:#004be2; font-size:1rem; font-weight: 600; text-transform: uppercase;}
 .contents #skills .skill_others #other4 {margin-bottom:80px;}
 
 /************ footer ************/

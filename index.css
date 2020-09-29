@@ -10,7 +10,7 @@ body{color:#000; font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Ma
 /************ header ************/
 header {width: 100%; font-size:1.25rem; text-transform: capitalize; position: fixed; top:0; left:0; z-index: 100; padding:15px 0;}
 /**** navigation ****/
-nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height:53px; padding:0 4.8645%; box-sizing: border-box;}
+nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height:50px; padding:0 4.8645%; box-sizing: border-box;}
 /* logo */
 nav h2 {margin:0; font-size:2.875rem; font-family: 'Rozha One', serif; opacity: 1; transition: 300ms ease;}
 nav h2 a {text-decoration:none; color:inherit; padding:10px;}
@@ -34,7 +34,7 @@ nav ul li a:hover::after, .subnav a:hover::after {
 .content {height:100vh; width:100%; padding:5.2083%; box-sizing:border-box; display: flex; justify-content: center; align-items: center;}
 /* title */
 .title {padding-left:80px;}
-.title h1 {font-size:6vw; margin:0; position: relative;}
+.title h1 {font-size:6vw; margin:0; position: relative; font-weight: 600;}
 .title h1 span {width:500px; display: flex; position: absolute; top:-90px; left:-80px; background: url(images/Hi.png) no-repeat 0 8px; text-indent: -9999px;}
 .title h1 img {margin:105px 0 0 0; animation:wave-hand 2.5s infinite ease-in-out;}
 @keyframes wave-hand {
@@ -86,7 +86,7 @@ nav ul li a:hover::after, .subnav a:hover::after {
     /* menu overlay */
     .overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
     .overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around; list-style:none; margin:0; padding:0;}
-    .overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:bold;text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
+    .overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight: 600;text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
     .overlay ul li a:hover {color:#000;}
     /* content */
     .title {padding-left:45px;}
