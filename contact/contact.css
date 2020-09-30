@@ -58,7 +58,7 @@ nav ul {display:none;}
 .container .contents {text-align: center;}
 /* contact left */
 .contact_left {height:100vh;}
-.container .contents .contact_left .box-image {width:100%; height:100vh; background:url(images/contactBg.png) center/cover; position: absolute; z-index:7;}
+.container .contents .contact_left .box-image {width:100%; height:100vh; background:url(images/contactBg.jpg) center/cover; position: absolute; z-index:7;}
 .container .contents .contact_left .box-image p {font-size: 16px; padding:25vh 10% 0;}
 .container .contents .contact_left .box-image p span {display: none;}
 /* contact right */
@@ -112,6 +112,6 @@ nav ul {display:none;}
     .container .contents .contact_left .box-image p span {display: block;}
     .container .contents .contact_right {position: static; width:50%;}
     .right1 {height:55vh;}
-    .contact_right a, .contact_right span {transition:700ms;}
+    .contact_right a, .contact_right span {transition:500ms;}
     .container .contents .email p, .contact_right a, .contact_right span {font-size:40px;}
 }
