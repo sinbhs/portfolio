@@ -19,6 +19,13 @@
         <title>송지우 포트폴리오</title>
         <!-- favicon -->
         <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="../images/site.webmanifest">
+        <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <!-- font -->
         <link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../fonts/fonts.css">
@@ -32,6 +39,7 @@
 
     <body>
         <div class="container">
+            <!-- header -->
             <header>
                 <!-- nav -->
                 <nav>
@@ -48,23 +56,131 @@
                     <span></span>
                 </div>
             </header>
+            <!-- mobileMenu overlay -->
                 <div class="overlay">
                     <ul>
                         <li><a href="../index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="work/works.html">works</a></li>
+                        <li><a href="../about/about.html">about</a></li>
+                        <li><a href="work.html">works</a></li>
                         <li><a href="../contact/contact.html">contact</a></li>
                     </ul>
                 </div>
             <!-- contents -->
+            <!-- side navigation -->
+            <ul id="gnb">
+                <li>
+                    <a href="#box1" data-number="1" class="active">
+                        <span class="dot">1</span>
+                        <span class="label">kiehls</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#box2" data-number="2">
+                        <span class="dot">2</span>
+                        <span class="label">Bustago</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#box3" data-number="3">
+                        <span class="dot">3</span>
+                        <span class="label">eventpage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#box4" data-number="4">
+                        <span class="dot">4</span>
+                        <span class="label">Pasteur</span>
+                    </a>
+                </li>
+            </ul>
             <div class="contents">
-                
+                <!-- page1 kiehls -->
+                <article id="page1">
+                    <h1><span>portfolio</span><br>works</h1>
+                    <div class="box">
+                        <div class="image work1_img">
+                            <img src="images/Kiehls_project.jpg" alt="kiehls">
+                        </div>
+                        <div class="info work1_info">
+                            <p>renewal / responsive web / UI / UX</p>
+                            <h2>kiehls</h2>
+                            <div class="txt_box">
+                                <img src="images/line.svg" alt="line">
+                                <div class="txt">
+                                    <p>period - 2020.09.18 ~ 2020.09.28<br>
+                                    role - 리디자인 100%, 퍼블리싱 100%<br>type - 반응형 웹(mobile, pc) 구현</p>
+                                </div>
+                            </div>
+                            <div class="btn"><a href="project/kiehls.html">view more</a></div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Pasteur -->
+                <article id="page2">
+                    <div class="box">
+                        <div class="image work2_img">
+                            <img src="images/Bustago_project.jpg" alt="Bustago">
+                        </div>
+                        <div class="info work2_info">
+                            <p>application UI / UX redesign (team project)</p>
+                            <h2>버스타고</h2>
+                            <div class="txt_box">
+                                <img src="images/line.svg" alt="line">
+                                <div class="txt">
+                                    <p>period - 2020.05.12 ~ 2020.07.10<br>
+                                    role - 하하하하<br>type - application UI / UX 개선</p>
+                                </div>
+                            </div>
+                            <div class="btn"><a href="project/bustago.html">view more</a></div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Eventpage -->
+                <article id="page3">
+                    <div class="box">
+                        <div class="image work3_img">
+                            <img src="images/Eventpage_project.jpg" alt="Eventpage">
+                        </div>
+                        <div class="info work3_info">
+                            <p>responsive web</p>
+                            <h2>eventpage</h2>
+                            <div class="txt_box">
+                                <img src="images/line.svg" alt="line">
+                                <div class="txt">
+                                    <p>period - 2020.07.27 ~ 2020.07.30<br>
+                                    role - 디자인 100%, 퍼블리싱 100%<br>type - 반응형 웹(mobile, tablet, pc) 구현</p>
+                                </div>
+                            </div>
+                            <div class="btn"><a href="project/eventpage.html">view more</a></div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Bustago -->
+                <article id="page4">
+                    <div class="box">
+                        <div class="image work4_img">
+                            <img src="images/Pasteur_project.jpg" alt="Pasteur">
+                        </div>
+                        <div class="info work4_info">
+                            <p>renewal / responsive web / UI / UX</p>
+                            <h2>Pasteur</h2>
+                            <div class="txt_box">
+                                <img src="images/line.svg" alt="line">
+                                <div class="txt">
+                                    <p>period - 2020.08.10 ~ 2020.08.19<br>
+                                    role - 리디자인 100%, 퍼블리싱 100%<br>type - 반응형 웹(mobile, pc) 구현</p>
+                                </div>
+                            </div>
+                            <div class="btn"><a href="project/pasteur.html">view more</a></div>
+                        </div>
+                    </div>
+                </article>
             </div>
             <!-- footer -->
             <footer>
                 <div class="return_top">back <br>to <br>top</div>
                 <div class="footer_copyright">COPYRIGHT 2020 Ji Woo Portfolio all rights reseved.</div>
-                <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="images/github.png" alt="github"><span>GitHub Blog</span></a></div>
+                <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="../about/images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
     </body>
