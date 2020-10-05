@@ -103,6 +103,8 @@ nav ul {display:none;}
 /* detail - 07. publishing */
 .contents .detail .design_guide .publishing {text-align: right; margin-bottom:100px;}
 .contents .detail .design_guide .publishing ul li {font-size:14px; line-height: 1.9;}
+/* detail - 08. result */
+.contents .detail .design_guide .result p {display:none;}
 
 /************ footer ************/
 footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5;}
