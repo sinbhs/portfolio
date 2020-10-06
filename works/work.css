@@ -59,16 +59,8 @@ nav ul {display:none;}
 .overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:600; text-transform: uppercase; color:#fff; transition:0.4s;}
 .overlay ul li a:hover {color:#000;}
 
-/* right_gnb */
-#gnb {position:fixed; top:50%; transform: translateY(-50%); right:20px; z-index: 9;}
-#gnb li a {display: block; color:inherit; text-align: right; font-weight: 400; text-transform: capitalize; margin:10px 0; font-size:0.9em;}
-#gnb li a::after {content:""; display: block; clear:both;}/* clear fix */
-#gnb li a span {display: inline-block; float:right;}
-#gnb li a .dot {border-radius: 50%; width: 8px; height:8px; background-color: #000; text-indent: 9999px; margin-top:5px; margin-left:20px;}
-#gnb li a .label {letter-spacing: -0.5px; opacity: 0;}
-/* .active */
-#gnb li a.active .label, #gnb li a:hover .label {opacity:1;}
-#gnb li a.active .dot {transform:scale(1.6); background-color: #004be2;}
+/* right gnb */
+#gnb {display: none;}
 
 /************ contents ************/
 .container .contents article {display: flex; flex-direction: column; justify-content: center; position: relative;}
@@ -87,7 +79,7 @@ nav ul {display:none;}
 .container .contents article .box .info .btn a { font-family: 'Montserrat',sans-serif; font-weight: 600; padding:15px 15px 15px 0; color:#004be2;}
 
 /************ footer ************/
-footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5; position: absolute; bottom:0; left:0;}
+footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5;}
 footer .return_top {text-align:left;}
 footer .footer_copyright {position: absolute; left:50%; transform:translateX(-50%);}
 footer .gitblog_link a {height:30px;}
@@ -142,6 +134,17 @@ footer .gitblog_link img {width:30px;}
     }
     .menu_icon {display:none;}
 
+    /* right_gnb */
+    #gnb {display:block; position:fixed; top:50%; transform: translateY(-50%); right:20px; z-index: 9;}
+    #gnb li a {display: block; color:inherit; text-align: right; font-weight: 400; text-transform: capitalize; margin:10px 0; font-size:0.9em;}
+    #gnb li a::after {content:""; display: block; clear:both;}/* clear fix */
+    #gnb li a span {display: inline-block; float:right;}
+    #gnb li a .dot {border-radius: 50%; width: 8px; height:8px; background-color: #000; text-indent: 9999px; margin-top:5px; margin-left:20px;}
+    #gnb li a .label {letter-spacing: -0.5px; opacity: 0;}
+    /* .active */
+    #gnb li a.active .label, #gnb li a:hover .label {opacity:1;}
+    #gnb li a.active .dot {transform:scale(1.6); background-color: #004be2;}
+
     /* contents */
     .container .contents article {display: block;}
     .container .contents #page2 .box, .container .contents #page4 .box {flex-direction: row-reverse;}
@@ -159,5 +162,5 @@ footer .gitblog_link img {width:30px;}
     .container .contents article .box .info .btn a::after {content:''; display:block; width:100%; height:0.5em; background:#90b6f0bd; position:absolute; bottom:0.9em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
     .container .contents article .box .info .btn a:hover::after {-webkit-transform: scaleX(1);transform: scaleX(1);-webkit-transform-origin: left top;transform-origin: left top;}
     /*** footer ***/
-    footer {font-size:0.833vw; padding:25px 15.625%;}
+    footer {font-size:0.833vw; padding:25px 15.625%; position: absolute; bottom:0; left:0;}
 }

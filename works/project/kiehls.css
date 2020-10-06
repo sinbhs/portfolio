@@ -9,7 +9,7 @@ img {vertical-align: top;}
 body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
 header, h1, h2, h3, footer{font-family:'Montserrat', serif;}
 
-/* --------------- mobile --------------- */
+/* --------------- mobile screen --------------- */
 
 /* container */
 .container {background-color: #F9F8FA; position: relative; z-index: 10;}
@@ -58,71 +58,118 @@ nav ul {display:none;}
 .overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:600; text-transform: uppercase; color:#fff; transition:0.4s;}
 .overlay ul li a:hover {color:#000;}
 
-/************ contents ************/
+/* contents */
 /* title */
 .contents .title {padding:40px 0 115px; font-family: 'Montserrat',sans-serif; font-weight: 500;}
 .contents .title p {font-size:14px; text-transform: capitalize;}
-.contents .title h1 {font-size:35px; text-transform: capitalize; color: #004be2; margin:0 0 60px;}
+.contents .title h1 {font-size:35px; text-transform: capitalize; margin:0 0 60px;}
 .contents .title .info_box {display: flex; align-items: flex-start;}
 .contents .title .info_box img {display: block; padding:5px 10px 0 0;}
 .contents .title .info_box p {font-size:14px; margin:0; line-height: 1.8; font-family:'S-CoreDream-R',sans-serif;}
+
 /* mockup */
 .contents .mockup {padding-bottom:75px;}
 .contents .mockup img {width:100%;}
+
 /* detail */
 .contents .detail h2 {font-size: 25px; text-transform: capitalize; color:#004be2; margin:0 0 55px; font-weight: 600;}
 /* detail - 01. project_goal */
 .contents .detail .project_goal {text-align: center; margin-bottom:160px;}
 .contents .detail .project_goal .pc_text {display: none;}
 .contents .detail .project_goal .mobile_text {font-size: 14px; line-height: 1.9;}
-.contents .detail .project_goal .mobile_text p {margin:0 0 40px;}
+.contents .detail .project_goal .mobile_text p {margin:0;}
 /* detail - 02. design_guide */
 .contents .detail .design_guide {text-align: center;}
 .contents .detail .design_guide h3 {font-weight: 600; margin-bottom:43px; text-transform: capitalize;}
-/* detail basic */
-.contents .detail .design_guide .keyword ul, .contents .detail .design_guide .color ul {display: flex; justify-content: space-between; margin-bottom:45px;}
-.contents .detail .design_guide p {font-size: 14px; line-height: 1.9;}
-.contents .detail .design_guide .keyword, .contents .detail .design_guide .color {margin-bottom: 95px;}
-/* detail - 03. keyword */
-.contents .detail .design_guide .keyword ul li {width:90px; height:90px; border:1px solid #de404f; border-radius: 50%; font-size: 14px; line-height: 90px;}
-/* detail - 04. color */
-.contents .detail .design_guide .color ul {display: flex; justify-content: space-between;}
-.contents .detail .design_guide .color ul li {width: 75px; height: 75px; font-size: 14px; line-height: 75px; border-radius: 50%;}
-.contents .detail .design_guide .color ul li:first-child {border:1px solid #000;}
-.contents .detail .design_guide .color ul li:nth-child(2) {background-color: #c4ad9d;}
-.contents .detail .design_guide .color ul li:nth-child(3) {background-color: #de404f;}
-.contents .detail .design_guide .color ul li:last-child {background-color: #000; color:#fff;}
-/* detail - 05. font */
-.contents .detail .design_guide .font {margin-bottom: 150px;}
-.contents .detail .design_guide .font ul li {font-size: 14px; padding:10px;}
-.contents .detail .design_guide .font ul li:first-child {padding-top:0;}
-.contents .detail .design_guide .font p {margin-top:25px;}
-/* detail - 06. UI / UX design */
-.contents .detail .design_guide .design {text-align: left; margin-bottom:90px;}
-.contents .detail .design_guide .design ul li {font-size: 14px; line-height: 1.9;}
-/* detail - 07. publishing */
-.contents .detail .design_guide .publishing {text-align: right; margin-bottom:100px;}
-.contents .detail .design_guide .publishing ul li {font-size:14px; line-height: 1.9;}
-/* detail - 08. result */
-.contents .detail .design_guide .result p {display:none;}
+    /* design_guide basic */
+    .contents .detail .design_guide .keyword ul, .contents .detail .design_guide .color ul {display: flex; justify-content: space-between; margin-bottom:45px;}
+    .contents .detail .design_guide p {font-size: 14px; line-height: 1.9;}
+    .contents .detail .design_guide .keyword, .contents .detail .design_guide .color {margin-bottom: 95px;}
+    /* design_guide - 01. keyword */
+    .contents .detail .design_guide .keyword ul li {width:90px; height:90px; border:1px solid #de404f; border-radius: 50%; font-size: 14px; line-height: 90px;}
+    /* design_guide - 02. color */
+    .contents .detail .design_guide .color ul {display: flex; justify-content: space-between;}
+    .contents .detail .design_guide .color ul li {width: 75px; height: 75px; font-size: 14px; line-height: 75px; border-radius: 50%;}
+    .contents .detail .design_guide .color ul li:first-child {border:1px solid #000;}
+    .contents .detail .design_guide .color ul li:nth-child(2) {background-color: #c4ad9d;}
+    .contents .detail .design_guide .color ul li:nth-child(3) {background-color: #de404f;}
+    .contents .detail .design_guide .color ul li:last-child {background-color: #000; color:#fff;}
+    /* design_guide - 03. font */
+    .contents .detail .design_guide .font {margin-bottom: 150px;}
+    .contents .detail .design_guide .font ul li {font-size: 14px; padding:10px;}
+    .contents .detail .design_guide .font ul li:first-child {padding-top:0;}
+    .contents .detail .design_guide .font p {margin-top:25px;}
+    /* design_guide - 04. UI / UX design */
+    .contents .detail .design_guide .design {text-align: left; margin-bottom:90px;}
+    .contents .detail .design_guide .design ul li {font-size: 13px; line-height: 2;}
+    /* design_guide - 05. publishing */
+    .contents .detail .design_guide .publishing {text-align: right; margin-bottom:100px;}
+    .contents .detail .design_guide .publishing ul li {font-size:13px; line-height: 2; letter-spacing: -0.3px;}
+/* detail - 03. result */
+.contents .detail .result {margin-bottom:90px; text-align: center;}
+.contents .detail .result p {margin-bottom:45px; font-size: 14px; line-height: 1.9;}
+.contents .detail .result h2 {margin-bottom:45px;}
+.contents .detail .result img{display:none;}
+.contents .detail .result .btn {display: flex; flex-direction: column-reverse; font-family: 'Montserrat',sans-serif;}
+.contents .detail .result .btn li {margin-bottom:20px;}
+.contents .detail .result .btn li a {display: block; width:150px; height:30px; border:1px solid #004be2; border-radius: 50px; padding:10px 20px; margin: 0 auto; font-weight: 500; line-height: 30px; text-transform: capitalize;}
+.contents .detail .result .btn li:first-child a {color:#555; border-color: #555;}
+.contents .detail .result .btn li:last-child a {color:#004be2;}
+.contents .detail .result .btn li:first-child:active a {background-color: #555; color:#fff;}
+.contents .detail .result .btn li:last-child:active a{background-color: #004be2; color:#fff;}
 
-/************ footer ************/
+/* next_project */
+.container .next_project {width:100%; height:140px; font-family: 'Montserrat',sans-serif; text-transform: capitalize; background:url(images/subbn.png) no-repeat center/cover; -webkit-filter: grayscale(0.8); filter: grayscale(0.8); transition:.6s;}
+.container .next_project:active {filter: grayscale(0);}
+.container .next_project a {color:#fff;}
+.container .next_project p {margin:0; padding:37px 0 10px; padding-left:5.3333%;}
+.container .next_project h2 {margin:0; padding-left:5.3333%; transition:0.3s;}
+.container .next_project:active h2 {-webkit-text-stroke: 1px #fff; color:transparent;}
+
+/* footer */
 footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5;}
-footer .return_top {text-align:left;}
+footer .return_top {text-align:left; color:#fff; cursor: pointer; text-transform: uppercase;}
 footer .footer_copyright {position: absolute; left:50%; transform:translateX(-50%);}
 footer .gitblog_link a {height:30px;}
 footer .gitblog_link span {display: none;}
 footer .gitblog_link img {width:30px;}
-/*** return-top btn ***/
-.return_top {color:#fff; cursor: pointer; text-transform: uppercase;}
 
-/* --------------- tablet screen --------------- */
+/* --------------- tablet screen : 768px --------------- */
 @media screen and (min-width:768px) {
     /* header */
     nav {height:50px;}
     .menu_icon {top:11px;}
 
     /* contents */
+    .contents .title p {font-size: 16px;}
+    .contents .title h1 {font-size: 55px;}
+    .contents .title .info_box p {font-size: 16px;}
+    
+    /* detail */
+    .contents .detail h2 {font-size: 30px;}
+    /* detail - 01. project_goal */
+    .contents .detail .project_goal .pc_text {display: block;}
+    .contents .detail .project_goal .mobile_text {display: none;}
+    .contents .detail .project_goal .pc_text p {font-size: 15px; line-height: 1.9; margin:0;}
+    /* detail - 02. design guide */
+    .contents .detail .design_guide h3 {font-size: 18px;}
+    .contents .detail .keyword .keyword_box, .contents .detail .color .color_box, .contents .detail .font .font_box {display: flex; align-items: center;}
+    .contents .detail .design_guide .keyword ul, .contents .detail .design_guide .color ul, .contents .detail .design_guide .font ul {width: 50%; max-width: 480px; margin: 0 auto;}
+    .contents .detail .design_guide .keyword p, .contents .detail .design_guide .color p, .contents .detail .design_guide .font p {width: 50%; max-width: 480px; padding-left:10.6666%; margin: 0; font-size: 15px; letter-spacing: -0.3px; margin:0 auto; box-sizing: border-box;}
+        /* design_guide - 01. keyword */
+        .contents .detail .design_guide .keyword, .contents .detail .design_guide .color {margin-bottom:140px;}
+        /* design_guide - 02. color */
+        .contents .detail .design_guide .color p br {display: none;}
+        /* design_guide - 03. font */
+        .contents .detail .design_guide .font p {margin-top:0;}
+        /* design_guide - 04. design */
+        .contents .detail .design_guide .design ul li {font-size: 15px;}
+    /* result */
+    .contents .detail .result .btn {flex-direction: row; justify-content: space-around;}
+    .contents .detail .design_guide .font {margin-bottom: 160px;}
+    /* next project */
+    .container .next_project {height:200px;}
+    .container .next_project p {padding-top:50px;}
 
     /* footer */
     footer {font-size:12px; padding: 25px 10%;}
@@ -152,6 +199,57 @@ footer .gitblog_link img {width:30px;}
     }
     .menu_icon {display:none;}
 
+    /* contents */
+    .contents {padding:200px 25% 0;}
+    /* title */
+    .contents .title {padding-top:0; padding-bottom: 165px;}
+    .contents .title h1 {font-size: 65px; margin-bottom:90px;}
+    .contents .title .info_box img {width:62px;}
+
+    /* detail */
+    .contents .detail h2 {margin-bottom:60px;}
+    /* detail - 01. project_goal */
+    .contents .detail .project_goal {margin-bottom:180px;}
+    .contents .detail .project_goal .pc_text p {font-size: 16px;}
+    /* detail - 02. design_guide */
+    .contents .detail .design_guide h2 {text-align: left;}
+    .contents .detail .design_guide .keyword, .contents .detail .design_guide .color{margin-bottom:75px;}
+    .contents .detail .design_guide .keyword p, .contents .detail .design_guide .color p, .contents .detail .design_guide .font p {font-size: 16px; text-align: left;}
+        /* design_guide - 01. keyword */
+        .contents .detail .design_guide h3 {text-align: left; margin-bottom:25px;}
+        .contents .detail .design_guide .keyword ul {justify-content: space-around;}
+        .contents .detail .design_guide .keyword ul li {width:107px; height:107px; line-height: 107px; font-size: 16px;}
+        .contents .detail .design_guide .keyword p br {display: none;}
+        /* design_guide - 02. color */
+        .contents .detail .design_guide .color ul li {width:107px; height:107px; line-height: 107px; font-size: 16px;}
+        .contents .detail .design_guide .color p br {display: block;}
+        /* design_guide - 03. font */
+        .contents .detail .design_guide .font {margin-bottom: 180px;}
+        .contents .detail .design_guide .font ul li {font-size: 16px; font-weight: 500;}
+        .contents .detail .design_guide .font ul li:first-child {padding-top:10px;}
+        .contents .detail .design_guide .font .font_box p br {display: none;}
+        /* design_guide - 04. design */
+        .contents .detail .design_guide .design {margin-bottom: 10px;}
+        .contents .detail .design_guide .design ul li, .contents .detail .design_guide .publishing ul li {font-size: 16px; letter-spacing: -0.3px;}
+        /* design_guide - 05. publishing */
+        .contents .detail .design_guide .publishing {margin-bottom: 175px;}
+        .contents .detail .design_guide .publishing h2 {text-align: right;}
+    /* detail - 03. result */
+    .contents .detail .result {position: relative; margin-bottom: 130px;}
+    .contents .detail .result p {font-size: 16px; margin-bottom: 65px;}
+    .contents .detail .result p br {display: none;}
+    .contents .detail .result img {display: block; position: absolute; bottom:65px; right:150px;}
+    /* result */
+    .contents .detail .result .btn li {margin:0;}
+    .contents .detail .result .btn li a {transition:0.3s;}
+    .contents .detail .result .btn li:first-child a:hover {background-color: #555; color:#fff;}
+    .contents .detail .result .btn li:last-child a:hover {background-color: #004be2; color:#fff;}
+    /* next project */
+    .container .next_project {height: 270px; background-position: 50% 60%; background-size: 1920px;}
+    .container .next_project p {padding:65px 15.625% 43px;}
+    .container .next_project h2 {font-size: 44px; padding-left: 15.625%;}
+    .container .next_project:hover {filter: grayscale(0.1); -webkit-filter: grayscale(0.1);}
+    .container .next_project:hover h2 {color:transparent; -webkit-text-stroke: 1px #fff;}
     /*** footer ***/
     footer {font-size:0.833vw; padding:25px 15.625%;}
 }
