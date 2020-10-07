@@ -18,7 +18,6 @@
         <meta name="twitter:description" content="안녕하세요. UI/UX designer & Web publisher 송지우의 포트폴리오입니다.">
         <title>송지우 포트폴리오</title>
         <!-- favicon -->
-        <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -30,9 +29,11 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="kiehls.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/kiehls.js"></script>
     </head>
 
@@ -83,7 +84,7 @@
                 <!-- detail -->
                 <div class="detail">
                     <!-- project goal -->
-                    <div class="project_goal">
+                    <div class="project_goal" data-aos="fade-up" data-aos-duration="1300">
                         <h2>project goal</h2>
                         <div class="pc_text">
                         <p>기존의 전체적으로 좁고 투박한 레이아웃을 넓고 깔끔한 레이아웃으로 재구성하여<br>사용자가 사이트를 이용하는 데 있어 가독성을 쉽게 확보 가능하며,</p>
@@ -95,7 +96,7 @@
                         </div>
                     </div>
                     <!-- design guide -->
-                    <div class="design_guide">
+                    <div class="design_guide" data-aos="fade-up" data-aos-duration="1300">
                         <h2>design guide</h2>
                         <!-- keyword -->
                         <div class="keyword">
@@ -134,7 +135,7 @@
                             </div>
                         </div>
                         <!-- UI / UX design -->
-                        <div class="design">
+                        <div class="design" data-aos="fade-up" data-aos-duration="1300">
                             <h2>UI / UX design</h2>
                             <ul>
                                 <li>기존 쇼핑몰은 이미지로만 이루어져 로딩이 오래걸리고 취약계층이 정보를 얻기 어려움<br>가독성 좋은 깔끔한 폰트 사용과 여유로운 줄간격, 레이아웃 사이 여백 배치를 통해 해결</li>
@@ -143,7 +144,7 @@
                             </ul>
                         </div>
                         <!-- fonts -->
-                        <div class="publishing">
+                        <div class="publishing" data-aos="fade-up" data-aos-duration="1300">
                             <h2>publishing</h2>
                             <ul>
                                 <li>웹표준, 접근성을 고려한 HTML 마크업 언어 구축</li>
@@ -156,12 +157,12 @@
                         </div>
                     </div>
                     <!-- view result -->
-                    <div class="result">
+                    <div class="result" data-aos="fade-up" data-aos-duration="1300">
                         <h2>view result</h2>
                         <p>리뉴얼된 키엘 메인 페이지, 제품 목록 페이지,<br>제품 상세 페이지 반응형 웹 구현 보러가기</p>
                         <img src="../images/arrow.svg" alt="arrow">
                         <ul class="btn">
-                            <li><a href="#" onclick="history.go(-1);return false;">back to list</a></li>
+                            <li><a href="#" onclick="history.go(-1); return false;">back to list</a></li>
                             <li><a href="https://sinbhs.github.io/kiehls/">renewal site</a></li>
                         </ul>
                     </div>    
@@ -171,7 +172,7 @@
                 <div class="next_project">
                     <a href="#" class="bg_box">
                     <p>next project</p>
-                    <h2>pasteur renewal project</h2>
+                    <h2>bustago UI / UX redesign project</h2>
                     </a>
                 </div>
             <!-- footer -->
@@ -181,5 +182,8 @@
                 <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="../../about/images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
