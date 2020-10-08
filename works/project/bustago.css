@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* basic */
+html,body{height:100%;}
+ul {margin:0; padding:0; list-style: none;}
+a {text-decoration: none;}
+img {vertical-align: top;}
+
+/* font setting */
+body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
+header, h1, h2, h3, footer{font-family:'Montserrat', serif;}
+
+/* --------------- mobile screen --------------- */
+
+/* container */
+.container {background-color: #F9F8FA; position: relative; z-index: 10;}
+.contents {padding:10vh 5.3333% 0}
+
+/* header */
+header {width: 100%; font-size:1.25rem; text-transform: capitalize; position: fixed; top:0; left:0; z-index: 100; transition:500ms; border-bottom:1px solid #ddd; background-color: #f9f8fa94;}
+header.scroll-down nav {background-color: #F9F8FA;}
+/* navigation */
+nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height:60px; padding:0 4.8645%; box-sizing: border-box; transition:0.3s;}
+/* nav logo */
+nav h2 {margin:0; font-size:2.875rem; font-family: 'Rozha One', serif; opacity: 1; transition:300ms ease;}
+nav h2 a {color:inherit; padding:10px;}
+nav h2 .bluedot {font-size:2rem; color:#004be2;}
+/* nav .gnb */
+nav ul {display:none;}
+
+/* mobile_menu overlay */
+/* menu btn */
+.menu_icon {display:flex; align-items: center; cursor: pointer; position: absolute; top:16px; right:4.8645%; height:30px; width:30px; z-index: 20;}
+.menu_icon span, .menu_icon span::after, .menu_icon span::before {width:30px; height: 2px; background-color: #004be2; border-radius:20px; transition:all 300ms ease;}
+.menu_icon span {display:block; position: relative;}
+.menu_icon span::after, .menu_icon span::before {content: ""; position: absolute;}
+.menu_icon span::after {top:8px;}
+.menu_icon span::before {bottom:8px;}
+/* menu btn::active ani */
+.menu_icon.active span, .menu_icon.active span::before, .menu_icon.active span::after {background-color: #fff;}
+.menu_icon.active span {animation: Menu 300ms ease forwards;}
+.menu_icon.active span::before {bottom:0; animation:Menu-before 300ms ease forwards;}
+.menu_icon.active span::after {top:0; animation:Menu-after 300ms ease forwards;}
+    @keyframes Menu {
+        50% {transform: rotate(0deg);}
+        100% {transform:rotate(45deg);}
+    }
+    @keyframes Menu-before {
+        50% {bottom:0; opacity: 0.5; transform:rotate(0deg);}
+        100% {bottom:0; opacity: 1; transform:rotate(90deg);}
+    }
+    @keyframes Menu-after {
+        50% {top:0; opacity:0.5; transform:rotate(0deg);}
+        100% {top:0; opacity: 1; transform:rotate(-90deg);}
+    }
+/* menu overlay */
+.overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
+.overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
+.overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:600; text-transform: uppercase; color:#fff; transition:0.4s;}
+.overlay ul li a:hover {color:#000;}
+
+/* contents */
+
+/* mobile tablet contents */
+    .contents .mb_tb_view {margin-bottom: 110px;}
+    /* title */
+    .contents .mb_tb_view .title {padding:40px 0 120px; font-family: 'Montserrat',sans-serif; font-weight: 500;}
+    .contents .mb_tb_view .title p {font-size:3.467vw; text-transform: capitalize;}
+    .contents .mb_tb_view .title h1 {font-size:35px; text-transform: capitalize; margin:0;}
+    .contents .mb_tb_view .title h1 span {font-family:'S-CoreDream-R',sans-serif;}
+    /* button */
+    .contents .mb_tb_view .button_box {text-align: center;}
+    .contents .mb_tb_view .button_box h2 {color:#004be2; text-transform: capitalize; margin:0;}
+    .contents .mb_tb_view .button_box p {text-transform: uppercase; margin-bottom:20px;}
+    /* button explain */
+    .contents .mb_tb_view .button_box .button_exp {margin:100px 0 0;}
+    .contents .mb_tb_view .button_box .button_exp h3 {color:#004be2; text-transform: capitalize;}
+    .contents .mb_tb_view .button_box .button_exp p {font-size: 14px; line-height: 1.9; margin-bottom: 45px;}
+    .contents .mb_tb_view .button_box .button_exp .btn li {margin-bottom: 20px;}
+    .contents .mb_tb_view .button_box .button_exp .btn a {display: block; width: 150px; height:30px; font-family: 'Montserrat',sans-serif; font-weight: 500; text-transform: capitalize; line-height: 30px; padding:10px 20px; margin: 0 auto; border:1px solid #004be2; border-radius: 50px;}
+    .contents .mb_tb_view .button_box .button_exp .btn a:active {background-color: #004be2; color:#fff;}
+    .contents .mb_tb_view .button_box .button_exp .btn li:last-child a {border-color: #555; color:#555;}
+    .contents .mb_tb_view .button_box .button_exp .btn li:last-child a:active {background-color: #555; color:#fff;}
+
+/* pc contents hidden */
+.container .contents .pc_view {display: none;}
+
+/* next_project */
+.container .next_project {width:100%; font-family: 'Montserrat',sans-serif; text-transform: capitalize; background:url(images/next_project_pasteur.png) no-repeat center/cover; filter: grayscale(0.8); -webkit-filter: grayscale(0.8); transition:all .6s; -webkit-transition:all .6s;}
+.container .next_project:active {filter: grayscale(0);}
+.container .next_project a {color:#fff; display: block; padding:5% 5.3333%;}
+.container .next_project p {margin:0; padding-bottom:10px;}
+.container .next_project h2 {margin:0; transition:0.3s;}
+.container .next_project:active h2 {-webkit-text-stroke: 1px #fff; color:transparent;}
+
+/* footer */
+footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5;}
+footer .return_top {text-align:left; color:#fff; cursor: pointer; text-transform: uppercase;}
+footer .footer_copyright {position: absolute; left:50%; transform:translateX(-50%);}
+footer .gitblog_link a {height:30px;}
+footer .gitblog_link span {display: none;}
+footer .gitblog_link img {width:30px;}
+
+/* --------------- tablet screen : 768px --------------- */
+@media screen and (min-width:768px) {
+    /* header */
+    nav {height:50px;}
+    .menu_icon {top:11px;}
+
+    /* contents */
+    .contents .title p {font-size: 16px;}
+    .contents .title h1 {font-size: 55px;}
+    .contents .title .info_box p {font-size: 16px;}
+    
+    /* detail */
+    .contents .detail h2 {font-size: 30px;}
+    /* detail - 01. project_goal */
+    .contents .detail .project_goal .pc_text {display: block;}
+    .contents .detail .project_goal .mobile_text {display: none;}
+    .contents .detail .project_goal .pc_text p {font-size: 15px; line-height: 1.9; margin:0;}
+    /* detail - 02. design guide */
+    .contents .detail .design_guide h3 {font-size: 18px;}
+    .contents .detail .keyword .keyword_box, .contents .detail .color .color_box, .contents .detail .font .font_box {display: flex; align-items: center;}
+    .contents .detail .design_guide .keyword ul, .contents .detail .design_guide .color ul, .contents .detail .design_guide .font ul {width: 50%; max-width: 480px; margin: 0 auto;}
+    .contents .detail .design_guide .keyword p, .contents .detail .design_guide .color p, .contents .detail .design_guide .font p {width: 50%; max-width: 480px; padding-left:10.6666%; margin: 0; font-size: 15px; letter-spacing: -0.3px; margin:0 auto; box-sizing: border-box;}
+        /* design_guide - 01. keyword */
+        .contents .detail .design_guide .keyword, .contents .detail .design_guide .color {margin-bottom:140px;}
+        /* design_guide - 02. color */
+        .contents .detail .design_guide .color p br {display: none;}
+        /* design_guide - 03. font */
+        .contents .detail .design_guide .font p {margin-top:0;}
+        /* design_guide - 04. design */
+        .contents .detail .design_guide .design ul li {font-size: 15px;}
+    /* result */
+    .contents .detail .result .btn {flex-direction: row; justify-content: space-around;}
+    .contents .detail .design_guide .font {margin-bottom: 160px;}
+
+    /* footer */
+    footer {font-size:12px; padding: 25px 10%;}
+    footer .return_top br {display: none;}
+    footer .gitblog_link a {color:#fff; text-decoration:none;}
+    footer .gitblog_link span {display:block;}
+    footer .gitblog_link img {display:none;}
+}
+
+/* --------------- pc screen --------------- */
+@media screen and (min-width:1440px) {
+    /* header */
+    header {border-bottom:none; background-color:transparent; padding:15px 0;}
+    header.scroll-down nav {background-color: transparent;}
+    nav ul {display: block;}
+    /* nav_list .gnb */
+    nav ul {padding:0; margin:0; list-style:none; display: flex;}
+    nav ul li a {color:#000; position: relative; display:inline-block;margin-left:30px;}
+    /* li:hover highlighter effect */
+    nav ul li a::after {content:''; display:block; width:100%; height:0.4em; background:#90b7f0; position:absolute; bottom:0.15em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
+    nav ul li:nth-child(3) a::after {transform:scaleX(1);}
+    nav ul li a:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    }
+    .menu_icon {display:none;}
+
+    /* contents */
+    .contents {padding:200px 25% 0;}
+    /* title */
+    .contents .title {padding-top:0; padding-bottom: 165px;}
+    .contents .title h1 {font-size: 65px; margin-bottom:90px;}
+    .contents .title .info_box img {width:62px;}
+
+    /* detail */
+    .contents .detail h2 {margin-bottom:60px;}
+    /* detail - 01. project_goal */
+    .contents .detail .project_goal {margin-bottom:180px;}
+    .contents .detail .project_goal .pc_text p {font-size: 16px;}
+    /* detail - 02. design_guide */
+    .contents .detail .design_guide h2 {text-align: left;}
+    .contents .detail .design_guide .keyword, .contents .detail .design_guide .color{margin-bottom:75px;}
+    .contents .detail .design_guide .keyword p, .contents .detail .design_guide .color p, .contents .detail .design_guide .font p {font-size: 16px; text-align: left;}
+        /* design_guide - 01. keyword */
+        .contents .detail .design_guide h3 {text-align: left; margin-bottom:25px;}
+        .contents .detail .design_guide .keyword ul {justify-content: space-around;}
+        .contents .detail .design_guide .keyword ul li {width:107px; height:107px; line-height: 107px; font-size: 16px;}
+        .contents .detail .design_guide .keyword p br {display: none;}
+        /* design_guide - 02. color */
+        .contents .detail .design_guide .color ul li {width:107px; height:107px; line-height: 107px; font-size: 16px;}
+        .contents .detail .design_guide .color p br {display: block;}
+        /* design_guide - 03. font */
+        .contents .detail .design_guide .font {margin-bottom: 180px;}
+        .contents .detail .design_guide .font ul li {font-size: 16px; font-weight: 500;}
+        .contents .detail .design_guide .font ul li:first-child {padding-top:10px;}
+        .contents .detail .design_guide .font .font_box p br {display: none;}
+        /* design_guide - 04. design */
+        .contents .detail .design_guide .design {margin-bottom: 10px;}
+        .contents .detail .design_guide .design ul li, .contents .detail .design_guide .publishing ul li {font-size: 16px; letter-spacing: -0.3px;}
+        /* design_guide - 05. publishing */
+        .contents .detail .design_guide .publishing {margin-bottom: 175px;}
+        .contents .detail .design_guide .publishing h2 {text-align: right;}
+    /* detail - 03. result */
+    .contents .detail .result {position: relative; margin-bottom: 130px;}
+    .contents .detail .result p {font-size: 16px; margin-bottom: 65px;}
+    .contents .detail .result p br {display: none;}
+    .contents .detail .result img {display: block; position: absolute; bottom:65px; right:150px;}
+    /* result */
+    .contents .detail .result .btn li {margin:0;}
+    .contents .detail .result .btn li a {transition:0.3s;}
+    .contents .detail .result .btn li:first-child a:hover {background-color: #555; color:#fff;}
+    .contents .detail .result .btn li:last-child a:hover {background-color: #004be2; color:#fff;}
+    /* next project */
+    .container .next_project:hover {filter: grayscale(0.1); -webkit-filter: grayscale(0.1);}
+    .container .next_project a {padding-left: 15.625%;}
+    .container .next_project p {font-weight: 600;}
+    .container .next_project h2 {font-size: 44px;}
+    .container .next_project:hover h2 {color:transparent; -webkit-text-stroke: 1px #ff9237;}
+    /*** footer ***/
+    footer {font-size:0.833vw; padding:25px 15.625%;}
+}
