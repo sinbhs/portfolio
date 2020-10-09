@@ -76,10 +76,10 @@ nav ul {display:none;}
     .contents .mb_tb_view .button_box .button_exp h3 {color:#004be2; text-transform: capitalize;}
     .contents .mb_tb_view .button_box .button_exp p {font-size: 14px; line-height: 1.9; margin-bottom: 45px;}
     .contents .mb_tb_view .button_box .button_exp .btn li {margin-bottom: 20px;}
-    .contents .mb_tb_view .button_box .button_exp .btn a {display: block; width: 150px; height:30px; font-family: 'Montserrat',sans-serif; font-weight: 500; text-transform: capitalize; line-height: 30px; padding:10px 20px; margin: 0 auto; border:1px solid #004be2; color: #004be2; border-radius: 50px;}
-    .contents .mb_tb_view .button_box .button_exp .btn a:active {background-color: #004be2; color:#fff;}
+    .contents .mb_tb_view .button_box .button_exp .btn a {display: block; width: 150px; height:30px; font-family: 'Montserrat',sans-serif; font-weight: 500; text-transform: capitalize; line-height: 30px; padding:10px 20px; margin: 0 auto; border:1px solid #004be2; color: #004be2; border-radius: 50px; transition: 200ms;}
+    .contents .mb_tb_view .button_box .button_exp .btn a:active, .contents .mb_tb_view .button_box .button_exp .btn a:hover {background-color: #004be2; color:#fff;}
     .contents .mb_tb_view .button_box .button_exp .btn li:last-child a {border-color: #555; color:#555;}
-    .contents .mb_tb_view .button_box .button_exp .btn li:last-child a:active {background-color: #555; color:#fff;}
+    .contents .mb_tb_view .button_box .button_exp .btn li:last-child a:active, .contents .mb_tb_view .button_box .button_exp .btn li:last-child a:hover {background-color: #555; color:#fff;}
 
 /* pc contents hidden */
 .container .contents .pc_view {display: none;}
@@ -100,47 +100,7 @@ footer .gitblog_link a {height:30px;}
 footer .gitblog_link span {display: none;}
 footer .gitblog_link img {width:30px;}
 
-/* --------------- tablet screen : 768px --------------- */
-@media screen and (min-width:768px) {
-    /* header */
-    nav {height:50px;}
-    .menu_icon {top:11px;}
-
-    /* contents */
-    .contents .title p {font-size: 16px;}
-    .contents .title h1 {font-size: 55px;}
-    .contents .title .info_box p {font-size: 16px;}
     
-    /* detail */
-    .contents .detail h2 {font-size: 30px;}
-    /* detail - 01. project_goal */
-    .contents .detail .project_goal .pc_text {display: block;}
-    .contents .detail .project_goal .mobile_text {display: none;}
-    .contents .detail .project_goal .pc_text p {font-size: 15px; line-height: 1.9; margin:0;}
-    /* detail - 02. design guide */
-    .contents .detail .design_guide h3 {font-size: 18px;}
-    .contents .detail .keyword .keyword_box, .contents .detail .color .color_box, .contents .detail .font .font_box {display: flex; align-items: center;}
-    .contents .detail .design_guide .keyword ul, .contents .detail .design_guide .color ul, .contents .detail .design_guide .font ul {width: 50%; max-width: 480px; margin: 0 auto;}
-    .contents .detail .design_guide .keyword p, .contents .detail .design_guide .color p, .contents .detail .design_guide .font p {width: 50%; max-width: 480px; padding-left:10.6666%; margin: 0; font-size: 15px; letter-spacing: -0.3px; margin:0 auto; box-sizing: border-box;}
-        /* design_guide - 01. keyword */
-        .contents .detail .design_guide .keyword, .contents .detail .design_guide .color {margin-bottom:140px;}
-        /* design_guide - 02. color */
-        .contents .detail .design_guide .color p br {display: none;}
-        /* design_guide - 03. font */
-        .contents .detail .design_guide .font p {margin-top:0;}
-        /* design_guide - 04. design */
-        .contents .detail .design_guide .design ul li {font-size: 15px;}
-    /* result */
-    .contents .detail .result .btn {flex-direction: row; justify-content: space-around;}
-    .contents .detail .design_guide .font {margin-bottom: 160px;}
-
-    /* footer */
-    footer {font-size:12px; padding: 25px 10%;}
-    footer .return_top br {display: none;}
-    footer .gitblog_link a {color:#fff; text-decoration:none;}
-    footer .gitblog_link span {display:block;}
-    footer .gitblog_link img {display:none;}
-}
 
 /* --------------- pc screen --------------- */
 @media screen and (min-width:1440px) {
@@ -164,49 +124,10 @@ footer .gitblog_link img {width:30px;}
 
     /* contents */
     .contents {padding:200px 25% 0;}
-    /* title */
-    .contents .title {padding-top:0; padding-bottom: 165px;}
-    .contents .title h1 {font-size: 65px; margin-bottom:90px;}
-    .contents .title .info_box img {width:62px;}
-
-    /* detail */
-    .contents .detail h2 {margin-bottom:60px;}
-    /* detail - 01. project_goal */
-    .contents .detail .project_goal {margin-bottom:180px;}
-    .contents .detail .project_goal .pc_text p {font-size: 16px;}
-    /* detail - 02. design_guide */
-    .contents .detail .design_guide h2 {text-align: left;}
-    .contents .detail .design_guide .keyword, .contents .detail .design_guide .color{margin-bottom:75px;}
-    .contents .detail .design_guide .keyword p, .contents .detail .design_guide .color p, .contents .detail .design_guide .font p {font-size: 16px; text-align: left;}
-        /* design_guide - 01. keyword */
-        .contents .detail .design_guide h3 {text-align: left; margin-bottom:25px;}
-        .contents .detail .design_guide .keyword ul {justify-content: space-around;}
-        .contents .detail .design_guide .keyword ul li {width:107px; height:107px; line-height: 107px; font-size: 16px;}
-        .contents .detail .design_guide .keyword p br {display: none;}
-        /* design_guide - 02. color */
-        .contents .detail .design_guide .color ul li {width:107px; height:107px; line-height: 107px; font-size: 16px;}
-        .contents .detail .design_guide .color p br {display: block;}
-        /* design_guide - 03. font */
-        .contents .detail .design_guide .font {margin-bottom: 180px;}
-        .contents .detail .design_guide .font ul li {font-size: 16px; font-weight: 500;}
-        .contents .detail .design_guide .font ul li:first-child {padding-top:10px;}
-        .contents .detail .design_guide .font .font_box p br {display: none;}
-        /* design_guide - 04. design */
-        .contents .detail .design_guide .design {margin-bottom: 10px;}
-        .contents .detail .design_guide .design ul li, .contents .detail .design_guide .publishing ul li {font-size: 16px; letter-spacing: -0.3px;}
-        /* design_guide - 05. publishing */
-        .contents .detail .design_guide .publishing {margin-bottom: 175px;}
-        .contents .detail .design_guide .publishing h2 {text-align: right;}
-    /* detail - 03. result */
-    .contents .detail .result {position: relative; margin-bottom: 130px;}
-    .contents .detail .result p {font-size: 16px; margin-bottom: 65px;}
-    .contents .detail .result p br {display: none;}
-    .contents .detail .result img {display: block; position: absolute; bottom:65px; right:150px;}
-    /* result */
-    .contents .detail .result .btn li {margin:0;}
-    .contents .detail .result .btn li a {transition:0.3s;}
-    .contents .detail .result .btn li:first-child a:hover {background-color: #555; color:#fff;}
-    .contents .detail .result .btn li:last-child a:hover {background-color: #004be2; color:#fff;}
+    /* mobile tablet contents */
+    .contents .mb_tb_view {display: none;}
+    /* pc contents */
+    .container .contents .pc_view {display: block;}
     /* next project */
     .container .next_project:hover {filter: grayscale(0.1); -webkit-filter: grayscale(0.1);}
     .container .next_project a {padding-left: 15.625%;}
@@ -215,4 +136,8 @@ footer .gitblog_link img {width:30px;}
     .container .next_project:hover h2 {color:transparent; -webkit-text-stroke: 1px #ff9237;}
     /*** footer ***/
     footer {font-size:0.833vw; padding:25px 15.625%;}
+    footer .return_top br {display: none;}
+    footer .gitblog_link a {color:#fff; text-decoration:none;}
+    footer .gitblog_link span {display:block;}
+    footer .gitblog_link img {display:none;}
 }
