@@ -29,11 +29,9 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="bustago.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/kiehls.js"></script>
     </head>
 
@@ -68,7 +66,7 @@
             <!-- contents -->
             <div class="contents">
                 <!-- mobile tablet view -->
-                <section class="mb_tb_view">
+                <div class="mb_tb_view">
                     <!-- title -->
                     <section class="title">
                         <p>application UI / UX renewal (team project)</p>
@@ -80,7 +78,7 @@
                         <p>pc화면에 최적화되어 있습니다.<br>pc로 확인해 주세요 :D !</p>
                         <img src="images/bustagoCharacter.png" alt="bustagoCharacter">
                         <div class="button_exp">
-                            <h3>detail information</h2>
+                            <h2>detail information</h2>
                             <p>자세한 UI / UX 개선 과정이 담긴 PDF 파일,<br>리뉴얼된 앱 프로토타입 보러가기 !</p>
                             <ul class="btn">
                                 <li><a href="https://drive.google.com/file/d/1-kmntEKoriwf6ZzF6zgOTcVVJbbCLBjk/view?usp=sharing" target="_blank">view PDF file</a></li>
@@ -89,7 +87,7 @@
                             </ul>
                         </div>
                     </section>
-                </section>
+                </div>
                 <!-- pc view -->
                 <div class="pc_view">
                     <!-- section 1 - title -->
@@ -101,8 +99,8 @@
                                 <img src="../images/line.svg" alt="line">
                                 <ul class="category">
                                     <li><p>period</p><p>2020.05.12 ~ 2020.07.10</p></li>
-                                    <li><p>role</p><p>research 85%<br>design/prototypeTool 80%<br>communication/teamwork 100%</p></li>
-                                    <li><p>type</p><p>어플리케이션 UI / UX 디자인 (팀 프로젝트)</p></li>
+                                    <li><p>role&nbsp;&nbsp;&nbsp;&nbsp;</p><p>research 85%<br>design/prototypeTool 80%<br>communication/teamwork 100%</p></li>
+                                    <li><p>type&nbsp;&nbsp;&nbsp;</p><p>어플리케이션 UI / UX 디자인 (팀 프로젝트)</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -122,25 +120,30 @@
                     <!-- section 3 - problems -->
                     <section class="problems">
                         <h2>problems</h2>
-                        <p>다양한 혜택과 기능을 제공하고 있지만 전체적으로<br>올드하고 복잡한 디자인과 시선이 분산되는 배치로 인해<br>가독성이 떨어지는 등 어플을 사용하는데 불편한 점이 많음</p>
+                        <div class="bgBox">
+                            <p>다양한 혜택과 기능을 제공하고 있지만 전체적으로<br>올드하고 복잡한 디자인과 시선이 분산되는 배치로 인해<br>가독성이 떨어지는 등 어플을 사용하는데 불편한 점이 많음</p>
+                        </div>
                         <p>출처 : 구글 플레이 버스타고 사용자 리뷰</p>
                     </section>
                     <!-- section 4 - app research -->
                     <section class="app_research">
                         <h2>application research</h2>
-                        <ul class="problems">
-                            <li>복잡한 유저 인터페이스로 사용자에게 혼란 야기</li>
-                            <li>시선 분산되는 요소의 존재</li>
-                            <li>앱 사용 목적지에 도달하기 위한 과정의 복잡함</li>
-                            <li>위치 기반 서비스의 부재</li>
-                            <li>글씨가 영역을 넘어갈 경우 보이지 않음</li>
-                            <li>구분되지 않는 터치 영역</li>
-                            <li>불필요한 아이콘 배치</li>
-                            <li>작은 글씨 크기로 가독성 떨어짐</li>
-                            <li>앱 이용 가이드의 부재</li>
-                        </ul>
-                        <div class="summary">
-                            복잡한 유저 인터 페이스와 올드한 디자인으로<br>가독성이 떨어지고 사용자의 니즈를 충족시키지<br>못하는 시외버스 예매 어플
+                        <div class="flex_box">
+                            <ul class="weakness">
+                                <li>문제점</li>
+                                <li>복잡한 유저 인터페이스로 사용자에게 혼란 야기</li>
+                                <li>시선 분산되는 요소의 존재</li>
+                                <li>앱 사용 목적지에 도달하기 위한 과정의 복잡함</li>
+                                <li>위치 기반 서비스의 부재</li>
+                                <li>글씨가 영역을 넘어갈 경우 보이지 않음</li>
+                                <li>구분되지 않는 터치 영역</li>
+                                <li>불필요한 아이콘 배치</li>
+                                <li>작은 글씨 크기로 가독성 떨어짐</li>
+                                <li>앱 이용 가이드의 부재</li>
+                            </ul>
+                            <div class="summary">
+                                복잡한 유저 인터 페이스와 올드한 디자인으로<br>가독성이 떨어지고 사용자의 니즈를 충족시키지<br>못하는 시외버스 예매 어플
+                            </div>
                         </div>
                     </section>
                     <!-- section 5 - project goal -->
@@ -157,7 +160,7 @@
                         <p>버스타고 UI 개선 방향 수립을 위한 비슷한 목적을 가진 경쟁사 어플 선정 및 각 어플의 장단점 분석</p>
                         <ul class="competitor_list">
                             <li>
-                                <h3><img src="images/bt_flixBusIcon.png" alt="flixBus"><p>flix bus app<br><span>유럽 버스 티켓 예약 어플</span></p></h3>
+                                <h3><img src="images/bt_flixBusIcon.png" alt="flixBus"><b>flix bus app<br><span>유럽 버스 티켓 예약 어플</span></b></h3>
                                 <div class="strength">
                                     <p>지도에서 출·도착지 선택 가능<br>간단한 사용법과 깔끔한 UI<br>결제 방법의 다양함<br>출·도착지까지의 거리 단위 선택 가능(마일, 킬로미터)<br>QR 코드 방식의 승차권 지원</p>
                                 </div>
@@ -166,7 +169,7 @@
                                 </div>
                             </li>
                             <li>
-                                <h3><img src="images/bt_KorailIcon.png" alt="Korail"><p>Korail app<br><span>코레일 승차권 예약 어플</span></p></h3>
+                                <h3><img src="images/bt_KorailIcon.png" alt="Korail"><b>korail app<br><span>코레일 승차권 예약 어플</span></b></h3>
                                 <div class="strength">
                                     <p>역에 일찍 도착하면 더 빠른 열차 추천<br>첫 화면에 필요한 설정을 한 눈에 보기 좋게 구성<br>간단한 사용법과 깔끔한 UI<br>지도를 통한 노선 확인 및 출·도착지 설정 가능<br>좌석이 순방향인지 역방향인지 보기 쉬움</p>
                                 </div>
@@ -175,7 +178,7 @@
                                 </div>
                             </li>
                             <li>
-                                <h3><img src="images/bt_GMMIcon.png" alt="GoodMorningMIRI""><p>Good morning MIRI<br><span>광역 버스 좌석 예약 어플</span></p></h3>
+                                <h3><img src="images/bt_GMMIcon.png" alt="GoodMorningMIRI"><b>good morning MIRI app<br><span>광역 버스 좌석 예약 어플</span></b></h3>
                                 <div class="strength">
                                     <p>한 눈에 알아보기 쉬운 디자인<br>광역 버스 예약이라는 유일한 어플<br>간단한 사용 방법</p>
                                 </div>
@@ -187,19 +190,23 @@
                     </section>
                     <!-- section 7 - UI Direction -->
                     <section class="direction">
-                        <h2>버스타고 UI direction</h2>
+                        <h2><span>버스타고</span> UI direction</h2>
                         <ul>
                             <li>
-                                <p>as is</p>
-                                <img src="images/bt_solidLine.svg" alt="solid">
+                                <div class="dt_title">
+                                    <p>As is</p>
+                                    <img src="images/bt_solidLine.svg" alt="solid">
+                                </div>
                                 <div class="txt">
                                 <p>복잡한 유저 인터페이스와 올드한 디자인, 가독성이 떨어지는 글씨 크기 등<br>앱을 이용하는데 불편함을 제공하는 어플</p>
                                 <p>위치 기반 서비스와 지도 기능, 최소화된 버스 예매 과정과 이용 가이드 등의<br>사용자의 니즈를 충족시키지 못하는 어플</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="images/bt_solidLine.svg" alt="solid">
-                                <p>to be</p>
+                                <div class="dt_title">
+                                    <img src="images/bt_solidLine.svg" alt="solid">
+                                    <p>To be</p>
+                                </div>
                                 <div class="txt">
                                 <p>불필요한 메뉴와 아이콘 정리, 앱 사용 목적에 맞는 메뉴 구성,<br>깔끔하고 직관적인 디자인으로 가시성이 높고 사용자가 정보를 쉽게 얻을 수 있는 어플</p>
                                 <p>유저 중심의 인터페이스와 앱 사용 과정의 최소화, 가이드 기능 활성화로<br>사용자의 니즈를 충족시키는 어플</p>
@@ -216,8 +223,8 @@
                                 <p>메인 화면의 절반을 차지하던 광고 창 축소 후 필요한 정보들로<br>구성된 깔끔한 메인 화면 구성, 편리한 이동을 위해 하단에 주요<br>기능으로 구성된 내비게이션 바 배치<br>좌석 선택 창을 상단에 하나로 정리하여 배치</p>
                             </li>
                             <li>
-                                <p>앱 사용 목적에 도달하는 과정의 복잡함<br>(왕복 예약 : 가는 편 선택 - 결제 -오는 편 선택 - 결제)</p>
-                                <p>앱 사용 과정 최소화<br>(왕복 예약 : 가는 편 선택 - 화면 전환 알림창 - 오는 편 선택 -결제)</p>
+                                <p>앱 사용 목적에 도달하는 과정의 복잡함<br><span>(왕복 예약 : 가는 편 선택 - 결제 -오는 편 선택 - 결제)</span></p>
+                                <p>앱 사용 과정 최소화<br><span>(왕복 예약 : 가는 편 선택 - 화면 전환 알림창 - 오는 편 선택 -결제)</span></p>
                             </li>
                             <li>
                                 <p>위치 기반 서비스와 지도, 앱 이용 가이드의 부재</p>
@@ -231,6 +238,7 @@
                     </section>
                     <!-- section 9 - wireframes -->
                     <section class="wireframe">
+                        <h2>wireframes</h2>
                         <img src="images/bt_wireframe.png" alt="wireframe">
                     </section>
                     <!-- section 10 - design guide -->
@@ -280,12 +288,14 @@
                         </div>
                         <!-- icon -->
                         <div class="icon">
+                            <h3>icon</h3>
                             <img src="images/bt_icon.png" alt="appIcon">
                         </div>
                     </section>
                     <!-- section 10 - output -->
                     <section class="output">
                         <h2>output preview</h2>
+                        <div class="outputBg"></div>
                     </section>
                     <!-- section 11 - final -->
                     <section class="fin">
