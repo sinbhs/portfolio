@@ -106,8 +106,8 @@ footer .gitblog_link img {width:30px;}
 @media screen and (min-width:1440px) {
     /* basic */
     h1,h2,h3 {margin:0;}
-    p {font-size:0.833vw;line-height: 2;}
-    .container .contents h2 {font-size: 1.563vw; color:#004be2; text-transform: capitalize; margin-bottom: 50px;}
+    p {font-size:16px;line-height: 2;}
+    .container .contents h2 {font-size: 30px; color:#004be2; text-transform: capitalize; margin-bottom: 50px;}
     /* header */
     header {border-bottom:none; background-color:transparent; padding:15px 0;}
     header.scroll-down nav {background-color: transparent;}
@@ -174,7 +174,7 @@ footer .gitblog_link img {width:30px;}
         /* section 6 - competitor analysis */
         .container .contents .pc_view .competitor {padding:180px 0 220px;}
         .container .contents .pc_view .competitor h2 {text-align: center;}
-        .container .contents .pc_view .competitor > p {font-size: 0.938vw; text-align: center;}
+        .container .contents .pc_view .competitor > p {text-align: center;}
         .container .contents .pc_view .competitor ul {display: flex; padding:115px 14.0625% 0;}
         .container .contents .pc_view .competitor ul li {width:33.3333%; border-left: 1px solid #969696; padding:40px;}
         .container .contents .pc_view .competitor ul li:last-child {border-right: 1px solid #969696;}
