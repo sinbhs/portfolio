@@ -135,7 +135,7 @@ footer .gitblog_link img {width:30px;}
         /* section 1 - title */
         .container .contents .pc_view .title_section {padding:0 25%; display: flex; justify-content: space-between;}
         .container .contents .pc_view .title_section .title p {font-family: 'Montserrat',sans-serif; text-transform: capitalize; font-weight: 500;}
-        .container .contents .pc_view .title_section .title h1 {font-size:3.385vw; margin-bottom: 90px;}
+        .container .contents .pc_view .title_section .title h1 {font-size:3.385vw; margin-bottom: 90px; text-transform: capitalize;}
         .container .contents .pc_view .title_section .title h1 span {font-family: 'S-CoreDream-R',sans-serif;}
 
         .container .contents .pc_view .title_section .info_box {display: flex; align-items: flex-start;}
@@ -156,6 +156,8 @@ footer .gitblog_link img {width:30px;}
         .container .contents .pc_view .problems h2 {padding:0 25%;}
         .container .contents .pc_view .problems .bgBox {height:716px; display: flex; justify-content: center; align-items: center; text-align: center; background: url(images/bt_problemBg.png) no-repeat center; background-size: 100%;}
         .container .contents .pc_view .problems .bgBox p {font-size: 1.042vw; font-weight: 500;}
+        .container .contents .pc_view .problems .bgBox p:hover {font-size: 0;}
+        .container .contents .pc_view .problems .bgBox p:hover::before {content: 'UI / UX 디자인 개선을 통해 모든 사용자에게 편리한 버스 예매 경험을 제공하자!'; color:#ff9018; font-size: 1.042vw; font-weight: bold;}
         .container .contents .pc_view .problems > p {padding:100px 25% 0; text-align: right;}
 
         /* section 4 - app research */
