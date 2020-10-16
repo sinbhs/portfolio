@@ -54,7 +54,7 @@ $(document).ready(function(){
         let ht = $(window).height();
         let scrollT = $(window).scrollTop();//스크롤 한 만큼의 값
 
-        for(let i = 0; i<4; i++) {
+        for(let i = 0; i<5; i++) {
             if(scrollT >= ht * i && scrollT < ht * (i+1)) {
                 $('#gnb li a').removeClass('active');
                 $('#gnb li').eq(i).find('a').addClass('active');
