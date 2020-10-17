@@ -7,7 +7,7 @@ img {vertical-align: top;}
 
 /* font setting */
 body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
-header, h1, h2, h3, footer{font-family:'Montserrat', serif;}
+header, h1, h2, h3, footer{font-family:'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
 
 /* --------------- mobile screen --------------- */
 
@@ -21,7 +21,7 @@ header.scroll-down nav {background-color: #F9F8FA;}
 /* navigation */
 nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height:60px; padding:0 4.8645%; box-sizing: border-box; transition:0.3s;}
 /* nav logo */
-nav h2 {margin:0; font-size:2.875rem; font-family: 'Rozha One', serif; opacity: 1; transition:300ms ease;}
+nav h2 {margin:0; font-size:2.875rem; font-family: 'Rozha One', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; opacity: 1; transition:300ms ease;}
 nav h2 a {color:inherit; padding:10px;}
 nav h2 .bluedot {font-size:2rem; color:#004be2;}
 /* nav .gnb */
@@ -55,7 +55,7 @@ nav ul {display:none;}
 /* menu overlay */
 .overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
 .overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
-.overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:600; text-transform: uppercase; color:#fff; transition:0.4s;}
+.overlay ul li a {font-family:'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;  font-size:50px; font-weight:600; text-transform: uppercase; color:#fff; transition:0.4s;}
 .overlay ul li a:hover {color:#000;}
 
 /* contents */
@@ -63,10 +63,10 @@ nav ul {display:none;}
 /* mobile tablet contents */
     .contents .mb_tb_view {margin-bottom: 110px;}
     /* title */
-    .contents .mb_tb_view .title {padding:40px 0 120px; font-family: 'Montserrat',sans-serif; font-weight: 500;}
+    .contents .mb_tb_view .title {padding:40px 0 120px; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; font-weight: 500;}
     .contents .mb_tb_view .title p {font-size:3.467vw; text-transform: capitalize;}
     .contents .mb_tb_view .title h1 {font-size:35px; text-transform: capitalize; margin:0;}
-    .contents .mb_tb_view .title h1 span {font-family:'S-CoreDream-R',sans-serif;}
+    .contents .mb_tb_view .title h1 span {font-family:'S-CoreDream-R',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
     /* button */
     .contents .mb_tb_view .button_box {text-align: center;}
     .contents .mb_tb_view .button_box h2 {color:#004be2; text-transform: capitalize; margin:0;}
@@ -76,7 +76,7 @@ nav ul {display:none;}
     .contents .mb_tb_view .button_box .button_exp h3 {color:#004be2; text-transform: capitalize;}
     .contents .mb_tb_view .button_box .button_exp p {font-size: 14px; line-height: 1.9; margin-bottom: 45px;}
     .contents .mb_tb_view .button_box .button_exp .btn li {margin-bottom: 20px;}
-    .contents .mb_tb_view .button_box .button_exp .btn a {display: block; width: 150px; height:30px; font-family: 'Montserrat',sans-serif; font-weight: 500; text-transform: capitalize; line-height: 30px; padding:10px 20px; margin: 0 auto; border:1px solid #004be2; color: #004be2; border-radius: 50px; transition: 200ms;}
+    .contents .mb_tb_view .button_box .button_exp .btn a {display: block; width: 150px; height:30px; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; font-weight: 500; text-transform: capitalize; line-height: 30px; padding:10px 20px; margin: 0 auto; border:1px solid #004be2; color: #004be2; border-radius: 50px; transition: 200ms;}
     .contents .mb_tb_view .button_box .button_exp .btn a:active, .contents .mb_tb_view .button_box .button_exp .btn a:hover {background-color: #004be2; color:#fff;}
     .contents .mb_tb_view .button_box .button_exp .btn li:last-child a {border-color: #555; color:#555;}
     .contents .mb_tb_view .button_box .button_exp .btn li:last-child a:active, .contents .mb_tb_view .button_box .button_exp .btn li:last-child a:hover {background-color: #555; color:#fff;}
@@ -85,7 +85,7 @@ nav ul {display:none;}
 .container .contents .pc_view {display: none;}
 
 /* next_project */
-.container .next_project {width:100%; font-family: 'Montserrat',sans-serif; text-transform: capitalize; background:url(images/next_project_pasteur.png) no-repeat center/cover; filter: grayscale(0.8); -webkit-filter: grayscale(0.8); transition:all .6s; -webkit-transition:all .6s;}
+.container .next_project {width:100%; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; text-transform: capitalize; background:url(images/next_project_worldwide.jpg) no-repeat 50% 10%/cover; filter: grayscale(0.8); -webkit-filter: grayscale(0.8); transition:all .6s; -webkit-transition:all .6s;}
 .container .next_project:active {filter: grayscale(0);}
 .container .next_project a {color:#fff; display: block; padding:5% 5.3333%;}
 .container .next_project p {margin:0; padding-bottom:10px;}
@@ -134,16 +134,16 @@ footer .gitblog_link img {width:30px;}
     .container .contents .pc_view {display: block;}
         /* section 1 - title */
         .container .contents .pc_view .title_section {padding:0 25%; display: flex; justify-content: space-between;}
-        .container .contents .pc_view .title_section .title p {font-family: 'Montserrat',sans-serif; text-transform: capitalize; font-weight: 500;}
+        .container .contents .pc_view .title_section .title p {font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; text-transform: capitalize; font-weight: 500;}
         .container .contents .pc_view .title_section .title h1 {font-size:3.385vw; margin-bottom: 90px; text-transform: capitalize;}
-        .container .contents .pc_view .title_section .title h1 span {font-family: 'S-CoreDream-R',sans-serif;}
+        .container .contents .pc_view .title_section .title h1 span {font-family: 'S-CoreDream-R',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
 
         .container .contents .pc_view .title_section .info_box {display: flex; align-items: flex-start;}
         .container .contents .pc_view .title_section .info_box img {width: 62px; padding:5px 10px 0 0;}
         .container .contents .pc_view .title_section .info_box .category li {display: flex;}
         .container .contents .pc_view .title_section .info_box .category li p {margin:0;}
         .container .contents .pc_view .title_section .info_box .category li p:nth-of-type(1) {padding-right: 30px;}
-        .container .contents .pc_view .title_section .info_box .category li:last-child p:nth-of-type(2) {font-family: 'S-CoreDream-R',sans-serif;}
+        .container .contents .pc_view .title_section .info_box .category li:last-child p:nth-of-type(2) {font-family: 'S-CoreDream-R',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
 
         .container .contents .pc_view .title_section .splash video {border-radius: 30px; width: 15.104vw; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
@@ -185,14 +185,14 @@ footer .gitblog_link img {width:30px;}
         .container .contents .pc_view .competitor ul li:nth-child(2) h3 {color:#4d65ad;}
         .container .contents .pc_view .competitor ul li:last-child h3 {color:#fbaa19;}
         .container .contents .pc_view .competitor ul li h3 img {padding-right: 30px;}
-        .container .contents .pc_view .competitor ul li h3 b span {font-family: 'S-CoreDream-R',sans-serif; color:#000;}
+        .container .contents .pc_view .competitor ul li h3 b span {font-family: 'S-CoreDream-R',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; color:#000;}
         .container .contents .pc_view .competitor ul li .strength {margin-bottom:60px;}
 
         /* section 7 - UI direction */
         .container .contents .direction {padding:0 25% 220px;}
-        .container .contents .direction h2 span {font-family: 'S-CoreDream-R',sans-serif;}
+        .container .contents .direction h2 span {font-family: 'S-CoreDream-R',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
         .container .contents .direction ul li {display: flex; align-items: flex-start; margin-bottom:140px;}
-        .container .contents .direction ul li .dt_title {width:33%; display: flex; align-items: center; margin-right:65px;font-size:1.302vw; font-family: 'Montserrat',sans-serif; font-weight: 500; margin:0 70px 0 30px;}
+        .container .contents .direction ul li .dt_title {width:33%; display: flex; align-items: center; margin-right:65px;font-size:1.302vw; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; font-weight: 500; margin:0 70px 0 30px;}
         .container .contents .direction ul li .dt_title > p {font-size:1.302vw;}
         .container .contents .direction ul li:first-child .dt_title p {margin-right: 30px;}
         .container .contents .direction ul li:last-child .dt_title p {margin-left: 30px;}
@@ -215,7 +215,7 @@ footer .gitblog_link img {width:30px;}
         .container .contents .design h3 {text-transform: capitalize; margin-bottom: 40px;}
 
         .container .contents .design > div {margin-bottom: 50px;}
-        .container .contents .design .display p {width:50%; text-align: center;}
+        .container .contents .design .display p {width:50%; text-align: center; text-transform: capitalize;}
         .keyword .keyword_box, .color .color_box, .color .color_box ul, .font_box {display: flex; align-items: center;}
         .keyword .keyword_box ul, .keyword .keyword_box p, .color .color_box ul, .color .color_box p, .font_box ul, .font_box p {width: 50%;}
         .keyword .keyword_box p, .color .color_box p, .font .font_box p {text-align: center; margin: 0;}
@@ -224,7 +224,7 @@ footer .gitblog_link img {width:30px;}
         .container .contents .design .keyword .keyword_box ul li {width:105px; height:105px; line-height: 105px; text-align: center; border:1px solid #f7913b; border-radius: 50%;}
 
         .container .contents .design .color .color_box ul {justify-content: space-between;}
-        .container .contents .design .color .color_box ul li {width:85px; height:85px; line-height: 85px; border-radius: 50%; text-align: center;}
+        .container .contents .design .color .color_box ul li {width:85px; height:85px; line-height: 85px; border-radius: 50%; text-align: center;text-transform: uppercase; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
         .container .contents .design .color .color_box ul li:first-child {background-color: #ebebeb;}
         .container .contents .design .color .color_box ul li:nth-child(2) {background-color: #ffd126;}
         .container .contents .design .color .color_box ul li:nth-child(3) {background-color: #ff9237;}

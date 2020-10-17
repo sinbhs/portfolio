@@ -16,3 +16,41 @@
     font-weight:normal;
     font-style:normal;
 }
+
+/* 시월구일 */
+@font-face {
+    font-family: 'KoreanSWGI4R';
+    src: url('KoreanSWGI4-R.woff2') format('woff2'),
+        url('KoreanSWGI4-R.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoreanSWGI3R';
+    src: url('KoreanSWGI3-R.woff2') format('woff2'),
+        url('KoreanSWGI3-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoreanSWGI1R';
+    src: url('KoreanSWGI1-R.woff2') format('woff2'),
+        url('KoreanSWGI1-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoreanSWGI2R';
+    src: url('KoreanSWGI2-R.woff2') format('woff2'),
+        url('KoreanSWGI2-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
