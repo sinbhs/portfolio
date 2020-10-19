@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/*------ basic ------*/
+::selection {background-color:#004be2; color:#fff;}
+::-moz-selection {background-color:#004be2; color:#fff;}
 /* 폰트 설정 */
 body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; background-color: #F9F8FA;}
 header, h1, h2, .skill_others h3,footer{font-family:'Montserrat', serif;}
@@ -70,7 +73,7 @@ ul {list-style:none; padding:0; margin:0;}
 
 /**** skills ****/
 #skills {padding:0 5.3333%;}
-#skills .skillBgTxt, #skills .skillBgTxt2 {text-align:center; font-size:2rem; font-weight: bold; color:transparent; -webkit-text-stroke: 1px #004be2b0;/*text-shadow: -1px -1px 0 #90b7f0, 1px -1px 0 #90b7f0, -1px 1px 0 #90b7f0, 1px 1px 0 #90b7f0; */ padding:55px 0 45px; font-family:'Montserrat',sans-serif;}
+#skills .skillBgTxt, #skills .skillBgTxt2 {text-align:center; font-size:2rem; font-weight: bold; color:#F9F8FA; text-shadow:-1px 0px #004be2, 0px 1px #004be2, 1px 0px #004be2, 0px -1px #004be2; -moz-text-shadow:-1px 0 #004be2, 0 1px #004be2, 1px 0 #004be2, 0 -1px #004be2; -webkit-text-shadow:-1px 0 #004be2, 0 1px #004be2, 1px 0 #004be2, 0 -1px #004be2; padding:55px 0 45px; font-family:'Montserrat',sans-serif;}
 #skills h2 {position: relative; margin:80px 0 0; font-weight: 600;}
 #skills h2::before {content:''; display:block; width:2em; height:0.1em; background-color: #004be2; border-radius:0.3em; position:absolute; top:-50%; left:50%; margin-left:-1em;}
 /* skill1 3가지 */
