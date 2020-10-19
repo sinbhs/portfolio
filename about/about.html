@@ -23,10 +23,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../fonts/fonts.css">
         <!-- CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">​
         <link rel="stylesheet" href="../common/normalize.css">
         <link rel="stylesheet" href="about.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>​
         <script src="js/about.js"></script>
     </head>
 
@@ -100,10 +102,10 @@
                 </div>
                 <!-- skills -->
                 <div id="skills">
-                    <h2>skills</h2>
-                    <div class="skillBgTxt">I'm specialized in</div>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">skills</h2>
+                    <div class="skillBgTxt" data-aos="zoom-in" data-aos-duration="1200">I'm specialized in</div>
                     <!-- skill1 -->
-                    <div id="skill1">
+                    <div id="skill1" data-aos="fade-up" data-aos-duration="1000">
                         <section class="skill_title">
                             <h3>development direction -</h3>
                             <p>사용자에게 <b class="highlighter">더 좋은 경험 제공</b><br>UI/UX를 중심으로 사용자에게 편리함과 긍정적인 경험을 제공하는 웹페이지를 만듭니다.</p>
@@ -121,10 +123,10 @@
                     <div id="skill2">
                         <!-- skill detail 1 -->
                         <div class="skill_detail" id="skill_detail1">
-                            <div class="skill_icon">
+                            <div class="skill_icon" data-aos="fade-left" data-aos-duration="1200">
                                 <img src="images/publishingSkill_Img.png" alt="퍼블리싱">
                             </div>
-                            <ul class="skill_list">
+                            <ul class="skill_list" data-aos="fade-right" data-aos-duration="1200">
                                 <li>
                                     <div class="txt">
                                         <span class="list_title">HTML5</span>
@@ -169,10 +171,10 @@
                         </div>
                         <!-- skill detail 2 -->
                         <div class="skill_detail" id="skill_detail2">
-                            <div class="skill_icon">
+                            <div class="skill_icon" data-aos="fade-right" data-aos-duration="1200">
                                 <img src="images/DesignSkill_Img.png" alt="designskill">
                             </div>
-                            <ul class="skill_list">
+                            <ul class="skill_list" data-aos="fade-left" data-aos-duration="1200">
                                 <li>
                                     <div class="txt">
                                         <span class="list_title">Photoshop</span>
@@ -197,8 +199,8 @@
                         </div>
                     </div>
                     <!-- others -->
-                    <div class="skillBgTxt2">Others</div>
-                    <div class="skill_others">
+                    <div class="skillBgTxt2" data-aos="fade-up" data-aos-duration="1200">Others</div>
+                    <div class="skill_others" data-aos="fade-up" data-aos-duration="1200">
                         <section id="other1">
                             <h3>for users</h3>
                             <p>사용자의 입장에서 생각하고 고민하여<br>더 편리하고 즐거움을 줄 수 있는 UX를 만듭니다.</p>
@@ -225,5 +227,8 @@
                 <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
