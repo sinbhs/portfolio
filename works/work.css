@@ -26,7 +26,7 @@ nav {display: flex; justify-content: space-between; align-items: center; width: 
 /* nav logo */
 nav h2 {margin:0; font-size:2.875rem; font-family: 'Rozha One', serif; opacity: 1; transition:300ms ease;}
 nav h2 a {color:inherit; padding:10px;}
-nav h2 .bluedot {font-size:2rem; color:#004be2;}
+nav h2 .blue_dot {font-size:2rem; color:#004be2;}
 /* nav .gnb */
 nav ul {display:none;}
 
