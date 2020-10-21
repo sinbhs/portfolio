@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-
-/* 폰트 설정 */
-body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
-header, h2,footer{font-family:'Montserrat', serif;}
-#about .title h3 {font-family:'Jost', sans-serif;}
 /*------ basic ------*/
 ::selection {background-color:#004be2; color:#fff;}
 ::-moz-selection {background-color:#004be2; color:#fff;}
@@ -12,8 +7,15 @@ ul {list-style:none; padding:0; margin:0;}
 a {text-decoration: none; color:inherit;}
 h2 {margin:0; font-weight: bold;}
 p {margin:0;}
+
+/* font-family */
+body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
+header, h2,footer{font-family:'Montserrat', serif;}
+#about .title h3 {font-family:'Jost', sans-serif;}
+
 /* --------------- mobile screen --------------- */
 .container {width: 100%; height:100vh; background-color: #F9F8FA; position: relative; z-index: 10; overflow: hidden;}
+
 /************ header ************/
 header {width: 100%; font-size:1.25rem; text-transform: capitalize; position: fixed; top:0; left:0; z-index: 100; transition:500ms; border-bottom:1px solid #ddd; background-color: #f9f8fa94;}
 header.scroll-down nav {background-color: #F9F8FA;}
