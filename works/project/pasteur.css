@@ -93,7 +93,7 @@ nav ul {display:none;}
     .contents .detail .design_guide .keyword ul li {width:90px; height:90px; box-shadow: 0 0 10px rgba(0,0,0,0.06); border-radius: 50%; font-size: 14px; line-height: 90px;}
     /* design_guide - 02. color */
     .contents .detail .design_guide .color ul {display: flex; justify-content: space-around;}
-    .contents .detail .design_guide .color ul li {width: 75px; height: 75px; font-size: 14px; line-height: 75px; border-radius: 50%; text-transform: uppercase;font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
+    .contents .detail .design_guide .color ul li {width: 90px; height: 90px; font-size: 14px; line-height: 90px; border-radius: 50%; text-transform: uppercase;font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
     .contents .detail .design_guide .color ul li:first-child {box-shadow: 0 0 10px rgba(0,0,0,0.06);}
     .contents .detail .design_guide .color ul li:nth-child(2) {background-color: #00ad53; color:#fff;}
     .contents .detail .design_guide .color ul li:last-child {background-color: #000; color: #fff;}
