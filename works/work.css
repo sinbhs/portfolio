@@ -55,6 +55,7 @@ nav ul {display:none;}
         50% {top:0; opacity:0.5; transform:rotate(0deg);}
         100% {top:0; opacity: 1; transform:rotate(-90deg);}
     }
+    
 /* menu overlay */
 .overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
 .overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
@@ -73,7 +74,7 @@ nav ul {display:none;}
 .container .contents article .box .info p {font-size: 13px; text-transform: capitalize; margin:0 0 10px;}
 .container .contents article .box .info > p {font-family: 'Montserrat',sans-serif; font-weight: 500;}
 .container .contents article .box .info h2{font-size: 35px; text-transform: capitalize; margin:0;}
-.container .contents article .box .work2_info h2 {font-family: 'S-CoreDream-R',sans-serif; font-size: 30px;}
+.container .contents article .box .work2_info h2, .container .contents article .box .work4_info h2 {font-family: 'S-CoreDream-6Bold',sans-serif; font-size: 30px; font-weight: bold;}
 .container .contents article .box .info .txt_box {display: flex; align-items: flex-start; margin-top:35px;}
 .container .contents article .box .info .txt_box img {padding:7px 10px 0 0; width:15%;}
 .container .contents article .box .info .txt_box .txt p {margin:0; font-size: 14px; line-height: 1.8;}
@@ -87,6 +88,7 @@ footer .footer_copyright {position: absolute; left:50%; transform:translateX(-50
 footer .gitblog_link a {height:30px;}
 footer .gitblog_link span {display: none;}
 footer .gitblog_link img {width:30px;}
+
 /*** return-top btn ***/
 .return_top {color:#fff; cursor: pointer; text-transform: uppercase;}
 
@@ -96,6 +98,7 @@ footer .gitblog_link img {width:30px;}
     nav {height:50px;}
     .menu_icon {top:11px;}
     .overlay {display:none;}
+
     /* contents */
     .container .contents article h1 {top:50px; left:10.9375%; font-size: 35px;}
     .container .contents article .box .image img {transition: 300ms ease;}
@@ -124,9 +127,11 @@ footer .gitblog_link img {width:30px;}
     header {border-bottom:none; background-color:transparent; padding:15px 0;}
     header.scroll-down nav {background-color: transparent;}
     nav ul {display: block;}
+
     /* nav_list .gnb */
     nav ul {padding:0; margin:0; list-style:none; display: flex;}
     nav ul li a {color:#000; position: relative; display:inline-block;margin-left:30px;}
+
     /* li:hover highlighter effect */
     nav ul li a::after {content:''; display:block; width:100%; height:0.4em; background:#90b7f0; position:absolute; bottom:0.15em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
     nav ul li:nth-child(3) a::after {transform:scaleX(1);}
@@ -165,6 +170,7 @@ footer .gitblog_link img {width:30px;}
     .container .contents article .box .info .btn a {padding:15px 0; transition:0.2s linear; position: relative;}
     .container .contents article .box .info .btn a::after {content:''; display:block; width:100%; height:0.5em; background:#90b6f0bd; position:absolute; bottom:0.9em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
     .container .contents article .box .info .btn a:hover::after {-webkit-transform: scaleX(1);transform: scaleX(1);-webkit-transform-origin: left top;transform-origin: left top;}
+
     /*** footer ***/
     footer {font-size:0.833vw; padding:25px 15.625%; position: absolute; bottom:0; left:0;}
 }
