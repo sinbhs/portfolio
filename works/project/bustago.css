@@ -18,12 +18,15 @@ header, h1, h2, h3, footer{font-family:'Montserrat',-apple-system,BlinkMacSystem
 /* header */
 header {width: 100%; font-size:1.25rem; text-transform: capitalize; position: fixed; top:0; left:0; z-index: 100; transition:500ms; border-bottom:1px solid #ddd; background-color: #f9f8fa94;}
 header.scroll-down nav {background-color: #F9F8FA;}
+
 /* navigation */
 nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height:60px; padding:0 4.8645%; box-sizing: border-box; transition:0.3s;}
+
 /* nav logo */
 nav h2 {margin:0; font-size:2.875rem; font-family: 'Rozha One', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; opacity: 1; transition:300ms ease;}
 nav h2 a {color:inherit; padding:10px;}
 nav h2 .bluedot {font-size:2rem; color:#004be2;}
+
 /* nav .gnb */
 nav ul {display:none;}
 
@@ -35,6 +38,7 @@ nav ul {display:none;}
 .menu_icon span::after, .menu_icon span::before {content: ""; position: absolute;}
 .menu_icon span::after {top:8px;}
 .menu_icon span::before {bottom:8px;}
+
 /* menu btn::active ani */
 .menu_icon.active span, .menu_icon.active span::before, .menu_icon.active span::after {background-color: #fff;}
 .menu_icon.active span {animation: Menu 300ms ease forwards;}
@@ -52,6 +56,7 @@ nav ul {display:none;}
         50% {top:0; opacity:0.5; transform:rotate(0deg);}
         100% {top:0; opacity: 1; transform:rotate(-90deg);}
     }
+
 /* menu overlay */
 .overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
 .overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
@@ -67,10 +72,12 @@ nav ul {display:none;}
     .contents .mb_tb_view .title p {font-size:3.467vw; text-transform: capitalize;}
     .contents .mb_tb_view .title h1 {font-size:35px; text-transform: capitalize; margin:0;}
     .contents .mb_tb_view .title h1 span {font-family:'S-CoreDream-R',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
+
     /* button */
     .contents .mb_tb_view .button_box {text-align: center;}
     .contents .mb_tb_view .button_box h2 {color:#004be2; text-transform: capitalize; margin:0;}
     .contents .mb_tb_view .button_box p {line-height: 1.9; text-transform: uppercase; margin-bottom:20px;}
+
     /* button explain */
     .contents .mb_tb_view .button_box .button_exp {margin:100px 0 0;}
     .contents .mb_tb_view .button_box .button_exp h3 {color:#004be2; text-transform: capitalize;}
@@ -106,13 +113,16 @@ footer .gitblog_link img {width:30px;}
     h1,h2,h3 {margin:0;}
     p {font-size:16px;line-height: 2;}
     .container .contents h2 {font-size: 30px; color:#004be2; text-transform: capitalize; margin-bottom: 50px;}
+
     /* header */
     header {border-bottom:none; background-color:transparent; padding:15px 0;}
     header.scroll-down nav {background-color: transparent;}
     nav ul {display: block;}
+
     /* nav_list .gnb */
     nav ul {padding:0; margin:0; list-style:none; display: flex;}
     nav ul li a {color:#000; position: relative; display:inline-block; margin-left:30px;}
+
     /* li:hover highlighter effect */
     nav ul li a::after {content:''; display:block; width:100%; height:0.4em; background:#90b7f0; position:absolute; bottom:0.15em; left:0; z-index:-1; transform:scaleX(0);-webkit-transform-origin: right top; transform-origin: right top; transition: -webkit-transform 0.3s ease-in; transition: transform 0.3s ease-in;}
     nav ul li:nth-child(3) a::after {transform:scaleX(1);}
@@ -126,10 +136,13 @@ footer .gitblog_link img {width:30px;}
 
     /* contents */
     .contents {padding:200px 0 0;}
+
     /* mobile tablet contents */
     .contents .mb_tb_view {display: none;}
+    
     /* pc contents */
     .container .contents .pc_view {display: block;}
+
         /* section 1 - title */
         .container .contents .pc_view .title_section {padding:0 25%; display: flex; justify-content: space-between;}
         .container .contents .pc_view .title_section .title p {font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; text-transform: capitalize; font-weight: 500;}
@@ -246,6 +259,7 @@ footer .gitblog_link img {width:30px;}
         .container .contents .fin .btn li a:hover {background-color: #004be2; color:#fff;}
         .container .contents .fin .back_btn a {display: block; width:150px; height:30px; line-height: 30px; color:#555; font-weight: 500; text-transform: capitalize; padding:10px 20px; margin:0 auto; border:1px solid #555; border-radius: 50px; transition: 200ms}
         .container .contents .fin .back_btn a:hover {background-color: #555; color:#fff;}
+
     /* next project */
     .container .next_project {background-size: 100%; transition: 500ms;}
     .container .next_project:hover {background-size: 110%;}
@@ -253,6 +267,7 @@ footer .gitblog_link img {width:30px;}
     .container .next_project p {font-size:1.5vw;}
     .container .next_project h2 {font-size: 44px; transform: translateY(100%); opacity: 0; transition: 500ms ease;}
     .container .next_project:hover h2 {transform: translateY(0); opacity: 1;}
+    
     /*** footer ***/
     footer {font-size:0.833vw; padding:25px 15.625%;}
     footer .return_top br {display: none;}

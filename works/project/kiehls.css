@@ -93,7 +93,7 @@ nav ul {display:none;}
     .contents .detail .design_guide .keyword ul li {width:90px; height:90px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.06); border-radius: 50%; font-size: 14px; line-height: 90px;}
     /* design_guide - 02. color */
     .contents .detail .design_guide .color ul {display: flex; justify-content: space-between;}
-    .contents .detail .design_guide .color ul li {width: 75px; height: 75px; font-size: 14px; line-height: 75px; border-radius: 50%; text-transform: uppercase; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
+    .contents .detail .design_guide .color ul li {width: 90px; height: 90px; font-size: 14px; line-height: 90px; border-radius: 50%; text-transform: uppercase; font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
     .contents .detail .design_guide .color ul li:first-child {box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);}
     .contents .detail .design_guide .color ul li:nth-child(2) {background-color: #c4ad9d;}
     .contents .detail .design_guide .color ul li:nth-child(3) {background-color: #de404f; color:#fff;}
@@ -122,8 +122,8 @@ nav ul {display:none;}
 .contents .detail .result .btn li a {display: block; width:150px; height:30px; border:1px solid #004be2; border-radius: 50px; padding:10px 20px; margin: 0 auto; font-weight: 500; line-height: 30px; text-transform: capitalize;}
 .contents .detail .result .btn li:first-child a {color:#555; border-color: #555;}
 .contents .detail .result .btn li:last-child a {color:#004be2;}
-.contents .detail .result .btn li:first-child:active a {background-color: #555; color:#fff;}
-.contents .detail .result .btn li:last-child:active a{background-color: #004be2; color:#fff;}
+.contents .detail .result .btn li:first-child:active a, .contents .detail .result .btn li:first-child:hover a {background-color: #555; color:#fff;}
+.contents .detail .result .btn li:last-child:active a, .contents .detail .result .btn li:last-child:hover a {background-color: #004be2; color:#fff;}
 
 /* next_project */
 .container .next_project {width:100%; font-family: 'Montserrat',sans-serif; text-transform: capitalize; background:url(images/next_project_bustago.jpg) no-repeat center/cover; transition:all .5s; -webkit-transition:all .5s;}
