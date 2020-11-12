@@ -32,29 +32,18 @@ nav ul {display:none;}
 .menu_icon span, .menu_icon span::after, .menu_icon span::before {width:30px; height: 2px; background-color: #004be2; border-radius:20px; transition:all 300ms ease;}
 .menu_icon span {display:block; position: relative;}
 .menu_icon span::after, .menu_icon span::before {content: ""; position: absolute;}
-.menu_icon span::after {top:8px;}
-.menu_icon span::before {bottom:8px;}
+.menu_icon span::after {top:8px; transition: top 300ms 300ms ease-in-out, transform 300ms ease-in-out;}
+.menu_icon span::before {bottom:8px; transition: bottom 300ms 300ms ease-in-out, transform 300ms ease-in-out;}
 
 /* menu icon::active ani */
-.menu_icon.active span, .menu_icon.active span::before, .menu_icon.active span::after {background-color: #fff;}
+.menu_icon.active span, .menu_icon.active span::before, .menu_icon.active span::after {background-color: rgba(50, 49, 145, 0);}
 .menu_icon.active span {animation: Menu 300ms ease forwards;}
-.menu_icon.active span::before {bottom:0; animation:Menu-before 300ms ease forwards;}
-.menu_icon.active span::after {top:0; animation:Menu-after 300ms ease forwards;}
-    @keyframes Menu {
-        50% {transform: rotate(0deg);}
-        100% {transform:rotate(45deg);}
-    }
-    @keyframes Menu-before {
-        50% {bottom:0; opacity: 0.5; transform:rotate(0deg);}
-        100% {bottom:0; opacity: 1; transform:rotate(90deg);}
-    }
-    @keyframes Menu-after {
-        50% {top:0; opacity:0.5; transform:rotate(0deg);}
-        100% {top:0; opacity: 1; transform:rotate(-90deg);}
-    }
+.menu_icon.active span::before {background-color: #fff; bottom:0; transform: rotate(45deg); transition: bottom 300ms ease-in-out, transform 300ms 300ms ease-in-out;}
+.menu_icon.active span::after {background-color: #fff; top:0; transform: rotate(-45deg); transition: top 300ms ease-in-out, transform 300ms 300ms ease-in-out;}
 
 /* menu overlay */
-.overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:0; width:100%; height:100%; z-index:10; background-color: #004be2;}
+.overlay {display:flex; flex-direction: column; justify-content: center; position: fixed; top:0; left:100%; width:100%; height:100%; z-index:10; background-color: #004be2; transition: 300ms;;}
+.overlay.active {left:0;}
 .overlay ul {height:48vh; display: flex; flex-direction: column; align-items: center; justify-content: space-around;}
 .overlay ul li a {font-family:'Montserrat',sans-serif;  font-size:50px; font-weight:600; text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
 .overlay ul li a:hover {color:#000;}

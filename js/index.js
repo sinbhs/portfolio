@@ -1,17 +1,16 @@
-// mobile, tablet menu ovelay
 $(function(){
-    $('.overlay').hide();
+    // mobile, tablet menu ovelay
     $('.menu_icon').click(function(){
         $(this).toggleClass('active')
+        $('.overlay').toggleClass('active');
         const menu = $('.menu_icon').hasClass('active');
         if(menu) {
             $('nav h2').css('opacity','0');
-            $('.overlay').slideDown();
         } else {
             $('nav h2').css('opacity','1');
-            $('.overlay').slideUp();
         }
     });
+
     //타이핑 이펙트
     var typewriter = new Typewriter('#typewriter',{
         loop:true
