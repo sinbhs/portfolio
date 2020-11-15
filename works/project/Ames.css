@@ -7,7 +7,7 @@ img {vertical-align: top;}
 
 /* font setting */
 body{color:#000; font-family: 'S-CoreDream-R', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;}
-header, h1, h2, h3, footer{font-family:'Montserrat', serif;}
+header, h1, h2, h3, footer{font-family:'Montserrat', sans-serif;}
 
 /* --------------- mobile screen --------------- */
 
@@ -89,7 +89,7 @@ nav ul {display:none;}
 
     /* design_guide - 02. color */
     .contents .detail .design_guide .color ul {display: flex; justify-content: space-around;}
-    .contents .detail .design_guide .color ul li {width: 90px; height: 90px; font-size: 14px; line-height: 90px; border-radius: 50%;}
+    .contents .detail .design_guide .color ul li {width: 90px; height: 90px; font-size: 14px; line-height: 90px; border-radius: 50%; font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; text-transform: uppercase;}
     .contents .detail .design_guide .color ul li:first-child {box-shadow: 0 0 10px rgba(0,0,0,0.06);}
     .contents .detail .design_guide .color ul li:last-child {background-color: #000; color: #fff;}
 
