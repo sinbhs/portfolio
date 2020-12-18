@@ -12,6 +12,7 @@ $(function(){
             $('header').css({'background':'#f9f8fa94','border-bottom':'1px solid #ddd'})
         }
     });
+
     // back to top Btn
     $(".return_top").click(function(){
         $("html, body").animate({
@@ -19,6 +20,7 @@ $(function(){
         }, 600);
         return false;
     });
+
     //scroll nav event
     $(window).scroll(function(){
         var scroll = $(this).scrollTop();
@@ -29,6 +31,30 @@ $(function(){
             });
         } else {
             $('header').removeClass('scroll-down');
+        }
+    });
+
+    
+    //해당 영역시 애니메이트
+    $(window).scroll(function(){
+        let w_scroll = $(window).scrollTop();
+        let skill1 = $('.skill_list1').offset().top;
+        let skill2 = $('.skill_list2').offset().top;
+        // skill_list 1 해당 영역 시 게이지 차오름
+        if(w_scroll >= skill1 - $(window).height()) {
+            $('.skill_list1 .progress_bar').eq(0).animate({width:'90%'}, 2500);
+            $('.skill_list1 .progress_bar').eq(1).animate({width:'80%'}, 2500);
+            $('.skill_list1 .progress_bar').eq(2).animate({width:'50%'}, 2500);
+            $('.skill_list1 .progress_bar').eq(3).animate({width:'75%'}, 2500);
+        } else {
+            $('.skill_list1 .progress_bar').stop(1,1).animate({width:0}, 300);
+        }
+        // skill_list 2 해당 영역 시 게이지 차오름
+        if(w_scroll >= skill2 - $(window).height()) {
+            $('.skill_list2 .progress_bar').eq(0).animate({width:'85%'}, 2500);
+            $('.skill_list2 .progress_bar').eq(1).animate({width:'75%'}, 2500);
+        } else {
+            $('.skill_list2 .progress_bar').stop(1,1).animate({width:0}, 300);
         }
     });
 });

@@ -101,14 +101,11 @@ ul {list-style:none; padding:0; margin:0;}
 
 /* progress bar outer */
 #skills #skill2 .skill_list li .progress_bar_outer {margin-top:2px; width:100%; height:2px; background-color: #d8d8d8;}
-#skills #skill2 .skill_list li .progress_bar_outer .progress_bar{width:90%; height:2px; background: linear-gradient(-90deg, #415d86 -50%, #accdff 150%);}
-#skills #skill2 #skill_detail1 .skill_list li:nth-child(2) .progress_bar_outer .progress_bar{width:80%;}
-#skills #skill2  #skill_detail1 .skill_list li:nth-child(3) .progress_bar_outer .progress_bar{width:50%;}
-#skills #skill2  #skill_detail1 .skill_list li:nth-child(4) .progress_bar_outer .progress_bar{width:75%;}
+#skills #skill2 .skill_list li .progress_bar_outer .progress_bar {width:0; height:2px; background: linear-gradient(-90deg, #415d86 -50%, #accdff 150%);}
 
 /* #skill_detail2 */
-#skills #skill2  #skill_detail2 .skill_list li:first-child .progress_bar_outer .progress_bar{width:85%;}
-#skills #skill2  #skill_detail2 .skill_list li:nth-child(2) .progress_bar_outer .progress_bar{width:75%;}
+/* #skills #skill2  #skill_detail2 .skill_list li:first-child .progress_bar_outer .progress_bar{width:85%;}
+#skills #skill2  #skill_detail2 .skill_list li:nth-child(2) .progress_bar_outer .progress_bar{width:75%;} */
 
 /* line highlighter */
 /*어바웃 애니메이션*/
