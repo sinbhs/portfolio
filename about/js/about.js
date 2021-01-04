@@ -43,8 +43,8 @@ $(function(){
         // skill_list 1 해당 영역 시 게이지 차오름
         if(w_scroll >= skill1 - $(window).height()) {
             $('.skill_list1 .progress_bar').eq(0).animate({width:'90%'}, 2500);
-            $('.skill_list1 .progress_bar').eq(1).animate({width:'80%'}, 2500);
-            $('.skill_list1 .progress_bar').eq(2).animate({width:'50%'}, 2500);
+            $('.skill_list1 .progress_bar').eq(1).animate({width:'90%'}, 2500);
+            $('.skill_list1 .progress_bar').eq(2).animate({width:'60%'}, 2500);
             $('.skill_list1 .progress_bar').eq(3).animate({width:'75%'}, 2500);
         } else {
             $('.skill_list1 .progress_bar').stop(1,1).animate({width:0}, 300);
@@ -53,6 +53,7 @@ $(function(){
         if(w_scroll >= skill2 - $(window).height()) {
             $('.skill_list2 .progress_bar').eq(0).animate({width:'85%'}, 2500);
             $('.skill_list2 .progress_bar').eq(1).animate({width:'75%'}, 2500);
+            $('.skill_list2 .progress_bar').eq(2).animate({width:'75%'}, 2500);
         } else {
             $('.skill_list2 .progress_bar').stop(1,1).animate({width:0}, 300);
         }
