@@ -69,7 +69,7 @@ nav ul {display:none;}
 .container .contents article .box .info p {font-size: 13px; text-transform: capitalize; margin:0 0 10px;}
 .container .contents article .box .info > p {font-family: 'Montserrat',sans-serif; font-weight: 500;}
 .container .contents article .box .info h2{font-size: 35px; text-transform: capitalize; margin:0;}
-.container .contents article .box .work2_info h2, .container .contents article .box .work4_info h2 {font-family: 'S-CoreDream-6Bold',sans-serif; font-size: 30px; font-weight: bold;}
+.container .contents article .box .work2_info h2, .container .contents article .box .work3_info h2 {font-family: 'S-CoreDream-6Bold',sans-serif; font-size: 30px; font-weight: bold;}
 .container .contents article .box .info .txt_box {display: flex; align-items: flex-start; margin-top:35px;}
 .container .contents article .box .info .txt_box img {padding:7px 10px 0 0; width:15%;}
 .container .contents article .box .info .txt_box .txt p {margin:0; font-size: 14px; line-height: 1.8;}
@@ -142,7 +142,7 @@ footer .gitblog_link img {width:30px;}
     #gnb {display:block; position:fixed; top:50%; transform: translateY(-50%); right:20px; z-index: 9;}
     #gnb li a {display: block; color:inherit; text-align: right; font-weight: 400; text-transform: capitalize; margin:10px 0; font-size:0.9em;}
     #gnb li a::after {content:""; display: block; clear:both;}/* clear fix */
-    #gnb li a span {display: inline-block; float:right;}
+    #gnb li a span {display: inline-block; float: right;}
     #gnb li a .dot {border-radius: 50%; width: 8px; height:8px; background-color: #000; text-indent: 9999px; margin-top:5px; margin-left:20px;}
     #gnb li a .label {letter-spacing: -0.5px; opacity: 0;}
     /* .active */
