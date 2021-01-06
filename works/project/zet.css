@@ -84,7 +84,14 @@ nav ul {display:none;}
 .contents .detail .about_project .mobile_text {font-size: 14px; line-height: 1.9;}
 .contents .detail .about_project .mobile_text p {margin:0;}
 
-/* detail - 02. result */
+/* detail - 02. contribution */
+.contents .detail .contribution {margin-bottom: 160px;}
+.contents .detail .contribution h2 {text-align: center;}
+.contents .detail .contribution strong {color: #004be2;}
+.contents .detail .contribution li {margin:50px 0; line-height: 1.5; text-align: center;}
+.contents .detail .contribution li p span {font-weight: bold; color: #555;}
+
+/* detail - 03. result */
 .contents .detail .result {margin-bottom:90px; text-align: center;}
 .contents .detail .result p {margin-bottom:45px; font-size: 14px; line-height: 1.9;}
 .contents .detail .result p b a {color:#000; position: relative;}
@@ -100,11 +107,11 @@ nav ul {display:none;}
 .contents .detail .result .btn li:first-child:active a, .contents .detail .result .btn li:first-child:hover a {background-color: #555; color:#fff;}
 .contents .detail .result .btn li:last-child:active a, .contents .detail .result .btn li:last-child:hover a{background-color: #004be2; color:#fff;}
 
-/* prev_project */
-.container .prev_project {width:100%; font-family: 'Montserrat',sans-serif; text-transform: capitalize; background:url(images/next_project_promotion.jpg) no-repeat center/cover; transition:all .5s; -webkit-transition:all .5s;}
-.container .prev_project a {color:#fff; display: block; padding:5% 5.3333%;}
-.container .prev_project p {margin:0; padding-bottom:10px; font-weight: bold; text-transform: uppercase;}
-.container .prev_project h2 {margin:0;}
+/* next_project */
+.container .next_project {width:100%; font-family: 'Montserrat',sans-serif; text-transform: capitalize; background:url(images/next_project_worldwide.jpg) no-repeat center/cover; transition:all .5s; -webkit-transition:all .5s;}
+.container .next_project a {color:#fff; display: block; padding:5% 5.3333%;}
+.container .next_project p {margin:0; padding-bottom:10px; font-weight: bold; text-transform: uppercase;}
+.container .next_project h2 {margin:0;}
 
 /* footer */
 footer {font-size:12px; width:100%; padding:25px 5.3333%; background-color: #004be2; color:#fff; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: center; line-height:1.5;}
@@ -182,7 +189,7 @@ footer .gitblog_link img {width:30px;}
     .contents .detail .about_project {margin-bottom:180px;}
     .contents .detail .about_project .pc_text p {font-size: 16px;}
 
-    /* detail - 02. result */
+    /* detail - 03. result */
     .contents .detail .result {position: relative; margin-bottom: 130px;}
     .contents .detail .result p {font-size: 16px; margin-bottom: 65px;}
     .contents .detail .result p br {display: none;}
@@ -194,13 +201,13 @@ footer .gitblog_link img {width:30px;}
         .contents .detail .result .btn li:first-child a:hover {background-color: #555; color:#fff;}
         .contents .detail .result .btn li:last-child a:hover {background-color: #004be2; color:#fff;}
 
-    /* prev project */
-    .container .prev_project {background-size: 100%; transition: 500ms;}
-    .container .prev_project:hover {background-size: 110%;}
-    .container .prev_project a {padding-left: 15.625%;}
-    .container .prev_project p {font-size:1.5vw;}
-    .container .prev_project h2 {font-size: 44px; transform: translateY(100%); opacity: 0; transition: 500ms ease;}
-    .container .prev_project:hover h2 {transform: translateY(0); opacity: 1;}
+    /* next project */
+    .container .next_project {background-size: 100%; transition: 500ms;}
+    .container .next_project:hover {background-size: 110%;}
+    .container .next_project a {padding-left: 15.625%;}
+    .container .next_project p {font-size:1.5vw;}
+    .container .next_project h2 {font-size: 44px; transform: translateY(100%); opacity: 0; transition: 500ms ease;}
+    .container .next_project:hover h2 {transform: translateY(0); opacity: 1;}
 
     /*** footer ***/
     footer {font-size:0.833vw; padding:25px 15.625%;}
