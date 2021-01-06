@@ -191,6 +191,7 @@ footer .gitblog_link img {width:30px;}
 
     /****** navigation ******/
     header {border-bottom:none; background-color:transparent; padding:15px 0;}
+    header.scroll-down {background-color: #F9F8FA;}
     header.scroll-down nav {background-color: transparent;}
     nav ul {display: block;}
 
