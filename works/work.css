@@ -151,7 +151,7 @@ footer .gitblog_link img {width:30px;}
 
     /* contents */
     .container .contents article {display: block;}
-    .container .contents #page2 .box, .container .contents #page4 .box {flex-direction: row-reverse;}
+    .container .contents #page2 .box, .container .contents #page4 .box, .container .contents #page6 .box {flex-direction: row-reverse;}
     .container .contents article h1 {display: block; color:#004be2; text-transform: capitalize; font-size: 65px; position: absolute; top: 5%; left: 11.9791%;}
     .container .contents article h1 br {display: none;}
     .container .contents article h1 span {padding-right:15px; color: #004be2; text-shadow: none;}
