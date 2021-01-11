@@ -47,7 +47,8 @@ nav ul li a:hover::after, .subnav a:hover::after {
 /* title */
 .title {padding-left:80px;}
 .title h1 {font-size:6vw; margin:0; position: relative; font-weight: 600;}
-.title h1 span {width:500px; display: flex; position: absolute; top:-90px; left:-80px; background: url(images/Hi.png) no-repeat 0 8px; text-indent: -9999px;}
+.title h1 .hi_emoji {width:500px; display: flex; position: absolute; top:-90px; left:-80px; background: url(images/Hi.png) no-repeat 0 8px; text-indent: -9999px;}
+.title h1 .name {display: inline-block; color: #004be2; -webkit-animation: wave-name 0.6s infinite alternate; -moz-animation: wave-name 0.6s infinite alternate; -o-animation: wave-name 0.6s infinite alternate; animation: wave-name 0.6s infinite alternate; -ms-transform-origin: 50% 100%; transform-origin: 50% 100%;}
 .title h1 img {margin:105px 0 0 0; animation:wave-hand 2.5s infinite ease-in-out;}
 @keyframes wave-hand {
     0%{transform: rotate(0deg)}
@@ -56,6 +57,11 @@ nav ul li a:hover::after, .subnav a:hover::after {
     28%{transform:rotate(13deg)}
     32%{transform:rotate(-13deg)}
     36%{transform:rotate(0deg)}
+}
+
+@keyframes wave-name {
+    0% {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg);}
+    100% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg);}
 }
 
 /* subtitle */
@@ -93,13 +99,15 @@ nav ul li a:hover::after, .subnav a:hover::after {
     .overlay.active ul li:nth-child(2) {transition-delay: 0.2s;}
     .overlay.active ul li:nth-child(3) {transition-delay: 0.4s;}
     .overlay.active ul li:nth-child(4) {transition-delay: 0.6s;}
-    .overlay ul li a {font-family:'Montserrat', -apple-system, BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo", sans-serif;  font-size:50px; font-weight: 600;text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
-    .overlay ul li a:hover {color:#000;}
+    .overlay ul li a {font-family:'Montserrat', -apple-system, BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo", sans-serif;  font-size:50px; font-weight: 600;text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s; position: relative;}
+    .overlay ul li a:hover {color: #000;}
+    .overlay.active ul li a.active {color: rgb(255, 255, 255);}
+    .overlay.active ul li a.active::after {position: absolute; top: 50%; content: ''; display: block; width: 100%; height: 13px; background-color: #90b6f0c4; -webkit-transform: rotate(4deg); -moz-transform: rotate(4deg); -ms-transform: rotate(4deg); -o-transform: rotate(4deg); transform: rotate(4deg);}
     
     /* content */
     .title {padding-left:45px;}
     .title h1 {font-size:40px; width:238px;}
-    .title h1 span{max-width:100%; top:-110px; left:-50px; background-size:60px; background-position:0 30px;}
+    .title h1 .hi_emoji{max-width:100%; top:-110px; left:-50px; background-size:60px; background-position:0 30px;}
     .title h1 img {width:40px; height:47px;}
     .title .subtitle {font-size:16px; width:230px;}
 }

@@ -56,6 +56,8 @@ nav ul {display:none;}
 .overlay.active ul li:nth-child(4) {transition-delay: 0.6s;}
 .overlay ul li a {font-family:'Montserrat', -apple-system, BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo", sans-serif;  font-size:50px; font-weight: 600;text-transform: uppercase; text-decoration:none; color:#fff; transition:0.4s;}
 .overlay ul li a:hover {color:#000;}
+.overlay.active ul li a.active {color: rgb(255, 255, 255);}
+.overlay.active ul li a.active::after {position: absolute; top: 50%; content: ''; display: block; width: 100%; height: 13px; background-color: #90b6f0c4; -webkit-transform: rotate(4deg); -moz-transform: rotate(4deg); -ms-transform: rotate(4deg); -o-transform: rotate(4deg); transform: rotate(4deg);}
 
 /* right gnb */
 #gnb {display: none;}
@@ -97,7 +99,7 @@ footer .gitblog_link img {width:30px;}
     /* contents */
     .container .contents article h1 {top:50px; left:10.9375%; font-size: 35px;}
     .container .contents article .box .image img {transition: 300ms ease;}
-    .container .contents article .box .image:hover img {transform: scale(1.05);box-shadow:0 20px 30px 0 rgba(65,58,58,.25); opacity: 0.9;}
+    .container .contents article .box .image:hover img {transform: scale(1.05); box-shadow:0 20px 30px 0 rgba(65,58,58,.25); opacity: 0.9;}
     .container .contents article .box .image img {display:block; max-width: 800px; margin:0 auto;}
     .container .contents article .box .info {max-width:800px; padding:30px 0; margin: 0 auto;}
     .container .contents article .box .info p {font-size: 16px;}
