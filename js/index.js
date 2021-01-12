@@ -11,7 +11,7 @@ $(function(){
         }
     });
 
-    //타이핑 이펙트
+    //typingwriter plugin
     var typewriter = new Typewriter('#typewriter',{
         loop:true
     })
