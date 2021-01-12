@@ -86,7 +86,7 @@ $(function(){
                 }
             }
 
-            $('html,body').stop().animate({scrollTop:moveTop},700);
+            $('html,body').stop().animate({scrollTop:moveTop},700,'easeOutSine');
         });
     });
     
