@@ -29,9 +29,11 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
+        <link rel="stylesheet" href="plugin/animate.css">
         <link rel="stylesheet" href="zet.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="plugin/wow.min.js"></script>
         <script src="js/project.js"></script>
     </head>
 
@@ -66,7 +68,7 @@
             <!-- contents -->
             <div class="contents">
                 <!-- title -->
-                <section class="title">
+                <section class="title wow fadeInUp">
                     <p>bootstrap / responsive web / clone</p>
                     <h1>zet<br>bootstrap project</h1>
                     <div class="info_box">
@@ -79,13 +81,13 @@
                     </div>
                 </section>
                 <!-- mockup -->
-                <div class="mockup">
+                <div class="mockup wow fadeInUp">
                     <img src="images/zet_mockup.png" alt="Ames_mockup">
                 </div>
                 <!-- detail -->
                 <div class="detail">
                     <!-- about project -->
-                    <div class="about_project">
+                    <div class="about_project wow fadeInUp">
                         <h2>about project</h2>
                         <div class="pc_text">
                         <p>부트스트랩 공부를 위해 클론 코딩한 웹사이트입니다.<br>4명으로 구성된 팀 프로젝트로 진행되었으며, 페이지를 나누어 작업했습니다.<br>반응형으로 작업되었으며, 부트스트랩을 이용하여 빠르고, 효율적인 작업이 가능했고,<br>다양한 해상도에서 그리드를 어떻게  구성하는지에 대해 많은 도움이 되었습니다.</p>
@@ -97,22 +99,22 @@
 
                     <!-- Web contribution -->
                     <div class="contribution">
-                        <h2>degree of contribution</h2>
+                        <h2 class="wow fadeInUp">degree of contribution</h2>
                         <ul>
-                            <li><p><strong>공통요소</strong></p><p>전체 페이지 nav, footer CSS</p></li>
-                            <li>
+                            <li class="wow fadeInUp"><p><strong>공통요소</strong></p><p>전체 페이지 nav, footer CSS</p></li>
+                            <li class="wow fadeInUp">
                                 <p><strong>INDEX 페이지(About ZET)</strong></p>
                                 <p><span>HTML5</span><br>- CSS 작업 중 발생하는 변경 사항을<br>HTML 작성자와 소통하며 수정</p>
                                 <p><span>CSS3</span><br>- 개인 작업 100%</p>
                                 <p><span>JS/jQuery</span><br>- 이용 수칙 Swiper(tablet, pc)</p>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp">
                                 <p><strong>PRICING 페이지</strong></p>
                                 <p><span>HTML5</span><br>- header html 수정</p>
                                 <p><span>CSS3</span><br>- nav 스크롤 이벤트</p>
                                 <p><span>JS/jQuery</span><br>- nav 스크롤 이벤트</p>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp">
                                 <p><strong>SUPPORT 페이지</strong></p>
                                 <p><span>JS/jQuery</span><br>- accordian menu 수정</p>
                             </li>
@@ -145,5 +147,8 @@
                 <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="../../about/images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>

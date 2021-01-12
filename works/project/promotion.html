@@ -29,9 +29,11 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
+        <link rel="stylesheet" href="plugin/animate.css">
         <link rel="stylesheet" href="promotion.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="plugin/wow.min.js"></script>
         <script src="js/project.js"></script>
     </head>
 
@@ -66,7 +68,7 @@
             <!-- contents -->
             <div class="contents">
                 <!-- title -->
-                <section class="title">
+                <section class="title wow fadeInUp">
                     <p>responsive web / promotion</p>
                     <h1>promotion page<br>project</h1>
                     <div class="info_box">
@@ -79,13 +81,13 @@
                     </div>
                 </section>
                 <!-- mockup -->
-                <div class="mockup">
+                <div class="mockup wow fadeInUp">
                     <img src="images/promotion_mockup.png" alt="Ames_mockup">
                 </div>
                 <!-- detail -->
                 <div class="detail">
                     <!-- project goal -->
-                    <div class="project_goal">
+                    <div class="project_goal wow fadeInUp">
                         <h2>project goal</h2>
                         <div class="pc_text">
                         <p>1300k 이벤트 웹 프로모션 페이지 제작 프로젝트<br>특정 기간 동안 진행되는 고객과의 소통을 위한 광고 페이지 제작<br>상품, 서비스들을 고객들께 알림으로써 브랜드 가치를 창출하고,</p>
@@ -97,17 +99,17 @@
                     </div>
                     <!-- design guide -->
                     <div class="design_guide">
-                        <h2>design guide</h2>
+                        <h2 class="wow fadeInLeft">design guide</h2>
                         <!-- keyword -->
                         <div class="keyword">
-                            <h3>keyword</h3>
+                            <h3 class="wow fadeInLeft">keyword</h3>
                             <div class="keyword_box">
                                 <ul>
-                                    <li>	&#35; 귀여운</li>
-                                    <li>	&#35; 따뜻한</li>
-                                    <li>	&#35; 깔끔한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s">	&#35; 귀여운</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">	&#35; 따뜻한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".9s">	&#35; 깔끔한</li>
                                 </ul>
-                                <p>피크닉 제품 홍보에 어울리는 <br>귀엽고 따뜻한 디자인</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">피크닉 제품 홍보에 어울리는 <br>귀엽고 따뜻한 디자인</p>
                             </div>
                         </div>
                         <!-- color -->
@@ -115,27 +117,27 @@
                             <h3>color</h3>
                             <div class="color_box">
                                 <ul>
-                                    <li>	&#35;76d696</li>
-                                    <li>	&#35;68a25f</li>
-                                    <li>	&#35;4c8a61</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s">	&#35;76d696</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">	&#35;68a25f</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".9s">	&#35;4c8a61</li>
                                 </ul>
-                                <p>피크닉의 계절인 봄에서 떠오르는<br>파릇파릇한 잔디의 색상</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">피크닉의 계절인 봄에서 떠오르는<br>파릇파릇한 잔디의 색상</p>
                             </div>
                         </div>
                         <!-- fonts -->
                         <div class="font">
-                            <h3>font</h3>
+                            <h3 class="wow fadeInUp">font</h3>
                             <div class="font_box">
-                                <ul>
+                                <ul class="wow fadeInUp">
                                     <li>NotoSans KR</li>
                                     <li>a시월구일</li>
                                     <li>Montserrat</li>
                                 </ul>
-                                <p>깔끔하고 가독성 좋은 폰트 사용</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.3s">깔끔하고 가독성 좋은 폰트 사용</p>
                             </div>
                         </div>
                         <!-- UI / UX design -->
-                        <div class="design">
+                        <div class="design wow fadeInLeft">
                             <h2>UI / UX design</h2>
                             <ul>
                                 <li>이벤트 페이지 컨텐츠를 섹션별로 나누어 보기좋게 배치</li>
@@ -144,7 +146,7 @@
                             </ul>
                         </div>
                         <!-- publising -->
-                        <div class="publishing">
+                        <div class="publishing wow fadeInRight">
                             <h2>publishing</h2>
                             <ul>
                                 <li>W3C Validator 검사 완료</li>
@@ -182,4 +184,7 @@
             </footer>
         </div>
     </body>
+    <script>
+        new WOW().init();
+    </script>
 </html>

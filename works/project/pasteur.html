@@ -29,9 +29,11 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
+        <link rel="stylesheet" href="plugin/animate.css">
         <link rel="stylesheet" href="pasteur.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="plugin/wow.min.js"></script>
         <script src="js/project.js"></script>
     </head>
 
@@ -66,7 +68,7 @@
             <!-- contents -->
             <div class="contents">
                 <!-- title -->
-                <section class="title">
+                <section class="title wow fadeInUp">
                     <p>renewal / responsive web / UI / UX</p>
                     <h1>pasteur<br>renewal project</h1>
                     <div class="info_box">
@@ -79,13 +81,13 @@
                     </div>
                 </section>
                 <!-- mockup -->
-                <div class="mockup">
+                <div class="mockup wow fadeInUp">
                     <img src="images/pasteur_mockup.png" alt="Ames_mockup">
                 </div>
                 <!-- detail -->
                 <div class="detail">
                     <!-- project goal -->
-                    <div class="project_goal">
+                    <div class="project_goal wow fadeInUp">
                         <h2>project goal</h2>
                         <div class="pc_text">
                         <p>파스퇴르 홈페이지는 2012년을 마지막으로 만들어진 웹사이트로<br>전체적으로 노후화된 디자인을 가지고 있음<br>이를 트렌드에 맞게 디자인하고 중요도에 따라 섹션을 배치해</p>
@@ -97,17 +99,17 @@
                     </div>
                     <!-- design guide -->
                     <div class="design_guide">
-                        <h2>design guide</h2>
+                        <h2 class="wow fadeInLeft">design guide</h2>
                         <!-- keyword -->
                         <div class="keyword">
-                            <h3>keyword</h3>
+                            <h3 class="wow fadeInLeft">keyword</h3>
                             <div class="keyword_box">
                                 <ul>
-                                    <li>	&#35; 깔끔한</li>
-                                    <li>	&#35; 파릇한</li>
-                                    <li>	&#35; 믿음직한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s">	&#35; 깔끔한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">	&#35; 파릇한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".9s">	&#35; 믿음직한</li>
                                 </ul>
-                                <p>믿고 마실 수 있는 신선한 상품, <br>건강한 우유</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">믿고 마실 수 있는 신선한 상품, <br>건강한 우유</p>
                             </div>
                         </div>
                         <!-- color -->
@@ -115,26 +117,26 @@
                             <h3>color</h3>
                             <div class="color_box">
                                 <ul>
-                                    <li>	&#35;fff</li>
-                                    <li>	&#35;00ad53</li>
-                                    <li>	&#35;000</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s">	&#35;fff</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">	&#35;00ad53</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".9s">	&#35;000</li>
                                 </ul>
-                                <p>기존 브랜드 로고 색상 중<br> 우유의 신선함을 보여주는 초록색 사용</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">기존 브랜드 로고 색상 중<br> 우유의 신선함을 보여주는 초록색 사용</p>
                             </div>
                         </div>
                         <!-- fonts -->
                         <div class="font">
-                            <h3>font</h3>
+                            <h3 class="wow fadeInUp">font</h3>
                             <div class="font_box">
-                                <ul>
+                                <ul class="wow fadeInUp">
                                     <li>NotoSans KR</li>
                                     <li>a시월구일</li>
                                 </ul>
-                                <p>신뢰를 주는 깔끔하고 가독성 좋은 폰트 사용</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.3s">신뢰를 주는 깔끔하고 가독성 좋은 폰트 사용</p>
                             </div>
                         </div>
                         <!-- UI / UX design -->
-                        <div class="design">
+                        <div class="design wow fadeInLeft">
                             <h2>UI / UX design</h2>
                             <ul>
                                 <li>기존 쇼핑몰은 2013년에 만들어져 노후화된 디자인과 작은 글씨크기로 홈페이지 이용에 어려움이 많았음<br>이를 해결하기 위해 가독성 좋은 깔끔한 폰트와 풀스크린 레이아웃, 적당한 여백을 배치하여</li>
@@ -143,7 +145,7 @@
                             </ul>
                         </div>
                         <!-- publishing -->
-                        <div class="publishing">
+                        <div class="publishing wow fadeInRight">
                             <h2>publishing</h2>
                             <ul>
                                 <li>W3C Validator 검사 완료</li>
@@ -180,5 +182,8 @@
                 <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="../../about/images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>

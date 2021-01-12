@@ -29,9 +29,11 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
+        <link rel="stylesheet" href="plugin/animate.css">
         <link rel="stylesheet" href="bustago.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="plugin/wow.min.js"></script>
         <script src="js/project.js"></script>
     </head>
 
@@ -91,7 +93,7 @@
                 <!-- pc view -->
                 <div class="pc_view">
                     <!-- section 1 - title -->
-                    <section class="title_section">
+                    <section class="title_section wow fadeInUp">
                         <div class="title">
                             <p>application UI / UX renewal (team project)</p>
                             <h1><span>버스타고</span><br>UI / UX renewal</h1>
@@ -112,13 +114,13 @@
                         </div>
                     </section>
                     <!-- section 2 - intro -->
-                    <section class="intro">
+                    <section class="intro wow fadeInUp" data-wow-delay="0.5s">
                         <h2>introduction</h2>
                         <p>전국 시외버스 승차권 통합 예매 어플 "버스타고"<br>터미널 방문 없이 전국 시외버스 터미널의 승차권 예매 및 취소,<br>운행/노선 정보 등 다양한 서비스 제공</p>
                         <p>Available Service : 승차권 예매, 승차권 조회, 예매 취소, 마이페이지, 터미널 정보</p>
                     </section>
                     <!-- section 3 - problems -->
-                    <section class="problems">
+                    <section class="problems wow fadeInUp">
                         <h2>problems</h2>
                         <div class="bgBox">
                             <p>다양한 혜택과 기능을 제공하고 있지만 전체적으로<br>올드하고 복잡한 디자인과 시선이 분산되는 배치로 인해<br>가독성이 떨어지는 등 어플을 사용하는데 불편한 점이 많음</p>
@@ -130,19 +132,19 @@
                         <h2>application research</h2>
                         <div class="flex_box">
                             <ul class="weakness">
-                                <li>문제점</li>
-                                <li>복잡한 유저 인터페이스로 사용자에게 혼란 야기</li>
-                                <li>시선 분산되는 요소의 존재</li>
-                                <li>앱 사용 목적지에 도달하기 위한 과정의 복잡함</li>
-                                <li>위치 기반 서비스의 부재</li>
-                                <li>글씨가 영역을 넘어갈 경우 보이지 않음</li>
-                                <li>구분되지 않는 터치 영역</li>
-                                <li>불필요한 아이콘 배치</li>
-                                <li>작은 글씨 크기로 가독성 떨어짐</li>
-                                <li>앱 이용 가이드의 부재</li>
+                                <li class="wow fadeInUp">문제점</li>
+                                <li class="wow fadeInUp" data-wow-delay="0.2s">복잡한 유저 인터페이스로 사용자에게 혼란 야기</li>
+                                <li class="wow fadeInUp" data-wow-delay="0.4s">시선 분산되는 요소의 존재</li>
+                                <li class="wow fadeInUp" data-wow-delay="0.6s">앱 사용 목적지에 도달하기 위한 과정의 복잡함</li>
+                                <li class="wow fadeInUp" data-wow-delay="0.8s">위치 기반 서비스의 부재</li>
+                                <li class="wow fadeInUp" data-wow-delay="1s">글씨가 영역을 넘어갈 경우 보이지 않음</li>
+                                <li class="wow fadeInUp" data-wow-delay="1.2s">구분되지 않는 터치 영역</li>
+                                <li class="wow fadeInUp" data-wow-delay="1.4s">불필요한 아이콘 배치</li>
+                                <li class="wow fadeInUp" data-wow-delay="1.6s">작은 글씨 크기로 가독성 떨어짐</li>
+                                <li class="wow fadeInUp" data-wow-delay="1.8s">앱 이용 가이드의 부재</li>
                             </ul>
                             <div class="summary">
-                                복잡한 유저 인터 페이스와 올드한 디자인으로<br>가독성이 떨어지고 사용자의 니즈를 충족시키지<br>못하는 시외버스 예매 어플
+                                <p class="wow fadeInUp" data-wow-delay="2s">복잡한 유저 인터 페이스와 올드한 디자인으로<br>가독성이 떨어지고 사용자의 니즈를 충족시키지<br>못하는 시외버스 예매 어플</p>
                             </div>
                         </div>
                     </section>
@@ -159,7 +161,7 @@
                         <h2>competitor analysis</h2>
                         <p>버스타고 UI 개선 방향 수립을 위한 비슷한 목적을 가진 경쟁사 어플 선정 및 각 어플의 장단점 분석</p>
                         <ul class="competitor_list">
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="0.3s">
                                 <h3><img src="images/bt_flixBusIcon.png" alt="flixBus"><b>flix bus app<br><span>유럽 버스 티켓 예약 어플</span></b></h3>
                                 <div class="strength">
                                     <p>지도에서 출·도착지 선택 가능<br>간단한 사용법과 깔끔한 UI<br>결제 방법의 다양함<br>출·도착지까지의 거리 단위 선택 가능(마일, 킬로미터)<br>QR 코드 방식의 승차권 지원</p>
@@ -168,7 +170,7 @@
                                     <p>언어 변경 불가(영어만 지원)<br>버스 운행 노선 찾기 어려움<br>환불 규정 등의 세부적인 안내 찾기 어려움</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="0.6s">
                                 <h3><img src="images/bt_KorailIcon.png" alt="Korail"><b>korail app<br><span>코레일 승차권 예약 어플</span></b></h3>
                                 <div class="strength">
                                     <p>역에 일찍 도착하면 더 빠른 열차 추천<br>첫 화면에 필요한 설정을 한 눈에 보기 좋게 구성<br>간단한 사용법과 깔끔한 UI<br>지도를 통한 노선 확인 및 출·도착지 설정 가능<br>좌석이 순방향인지 역방향인지 보기 쉬움</p>
@@ -177,7 +179,7 @@
                                     <p>모바일 승차권을 다른 사람과 공유 및 전달 불가능<br>멤버십 카드 메뉴로 이동 시 사전 안내 없이<br>화면 밝기가 최대치로 적용됨</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="0.9s">
                                 <h3><img src="images/bt_GMMIcon.png" alt="GoodMorningMIRI"><b>good morning MIRI app<br><span>광역 버스 좌석 예약 어플</span></b></h3>
                                 <div class="strength">
                                     <p>한 눈에 알아보기 쉬운 디자인<br>광역 버스 예약이라는 유일한 어플<br>간단한 사용 방법</p>
@@ -192,7 +194,7 @@
                     <section class="direction">
                         <h2><span>버스타고</span> UI direction</h2>
                         <ul>
-                            <li>
+                            <li class="wow fadeInUp">
                                 <div class="dt_title">
                                     <p>As is</p>
                                     <img src="images/bt_solidLine.svg" alt="solid">
@@ -202,7 +204,7 @@
                                 <p>위치 기반 서비스와 지도 기능, 최소화된 버스 예매 과정과 이용 가이드 등의<br>사용자의 니즈를 충족시키지 못하는 어플</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp">
                                 <div class="dt_title">
                                     <img src="images/bt_solidLine.svg" alt="solid">
                                     <p>To be</p>
@@ -218,19 +220,19 @@
                     <section class="improvement">
                         <h2>improvement</h2>
                         <ul>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="0.3s">
                                 <p>복잡한 유저 인터페이스, 좌석 선택 창의 분리로 인한 시선 분산</p>
                                 <p>메인 화면의 절반을 차지하던 광고 창 축소 후 필요한 정보들로<br>구성된 깔끔한 메인 화면 구성, 편리한 이동을 위해 하단에 주요<br>기능으로 구성된 내비게이션 바 배치<br>좌석 선택 창을 상단에 하나로 정리하여 배치</p>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="0.6s">
                                 <p>앱 사용 목적에 도달하는 과정의 복잡함<br><span>(왕복 예약 : 가는 편 선택 - 결제 -오는 편 선택 - 결제)</span></p>
                                 <p>앱 사용 과정 최소화<br><span>(왕복 예약 : 가는 편 선택 - 화면 전환 알림창 - 오는 편 선택 -결제)</span></p>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="0.9s">
                                 <p>위치 기반 서비스와 지도, 앱 이용 가이드의 부재</p>
                                 <p>GPS를 활용한 위치 기반 서비스, 지도를 통한 출·도착지 설정 UI 구현<br>버스 선택 창 스와이프 가이드 제공</p>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-delay="1s">
                                 <p>올드한 디자인, 글씨가 영역을 넘어갈 경우 보이지 않는 문제,<br>구분되지 않는 터치 영역, 불필요한 아이콘, 작은 글씨 크기로<br>인한 가독성 저하</p>
                                 <p>깔끔하고 가독성 좋은 폰트와 폰트 크기 적용, 불필요한 아이콘과<br>메뉴 정리, 간단하고 직관적인 디자인</p>
                             </li>
@@ -254,11 +256,11 @@
                             <h3>keyword</h3>
                             <div class="keyword_box">
                                 <ul>
-                                    <li>	&#35; 귀여운</li>
-                                    <li>	&#35; 즐거운</li>
-                                    <li>	&#35; 심플한</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.3s">	&#35; 귀여운</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.6s">	&#35; 즐거운</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.9s">	&#35; 심플한</li>
                                 </ul>
-                                <p>"cash bee happy"<br>기존 브랜드의 귀여움, 버스 타고 여행 갈 때의 즐거움을<br>담은 디자인과 필요한 정보만을 담은 심플한 구조</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">"cash bee happy"<br>기존 브랜드의 귀여움, 버스 타고 여행 갈 때의 즐거움을<br>담은 디자인과 필요한 정보만을 담은 심플한 구조</p>
                             </div>
                         </div>
                         <!-- color -->
@@ -266,19 +268,19 @@
                             <h3>color</h3>
                             <div class="color_box">
                                 <ul>
-                                    <li>	&#35;ebebeb</li>
-                                    <li>	&#35;ffd126</li>
-                                    <li>	&#35;ff9237</li>
-                                    <li>	&#35;ec5454</li>
-                                    <li>	&#35;262626</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.2s">	&#35;ebebeb</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.4s">	&#35;ffd126</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.6s">	&#35;ff9237</li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.8s">	&#35;ec5454</li>
+                                    <li class="wow fadeInUp" data-wow-delay="1s">	&#35;262626</li>
                                 </ul>
-                                <p>캐시비 캐릭터의 상징인 벌의 색상과 그에 어울리는 색상 선택</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">캐시비 캐릭터의 상징인 벌의 색상과 그에 어울리는 색상 선택</p>
                             </div>
                         </div>
                         <!-- fonts -->
                         <div class="font">
                             <h3>font</h3>
-                            <div class="font_box">
+                            <div class="font_box wow fadeInUp">
                                 <ul>
                                     <li>NotoSans KR Medium</li>
                                     <li>NotoSans KR Bold</li>
@@ -289,7 +291,7 @@
                         <!-- icon -->
                         <div class="icon">
                             <h3>icon</h3>
-                            <img src="images/bt_icon.png" alt="appIcon">
+                            <img class="wow fadeInUp" src="images/bt_icon.png" alt="appIcon">
                         </div>
                     </section>
                     <!-- section 10 - output -->
@@ -325,5 +327,8 @@
                 <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="../../about/images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>

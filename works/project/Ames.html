@@ -29,9 +29,11 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- CSS -->
         <link rel="stylesheet" href="../../common/normalize.css">
+        <link rel="stylesheet" href="plugin/animate.css">
         <link rel="stylesheet" href="Ames.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="plugin/wow.min.js"></script>
         <script src="js/project.js"></script>
     </head>
 
@@ -66,7 +68,7 @@
             <!-- contents -->
             <div class="contents">
                 <!-- title -->
-                <section class="title">
+                <section class="title wow fadeInUp">
                     <p>renewal / adaptive web / UI / UX</p>
                     <h1>ames worldwide<br>renewal project</h1>
                     <div class="info_box">
@@ -79,13 +81,13 @@
                     </div>
                 </section>
                 <!-- mockup -->
-                <div class="mockup">
+                <div class="mockup wow fadeInUp">
                     <img src="images/AmesMockup.png" alt="Ames_mockup">
                 </div>
                 <!-- detail -->
                 <div class="detail">
                     <!-- project goal -->
-                    <div class="project_goal">
+                    <div class="project_goal wow fadeInUp">
                         <h2>project goal</h2>
                         <div class="pc_text">
                         <p>사진으로만 구성된 메인페이지를 사용자에게 필요한 정보들을 모아 재구성하여<br>사용자가 사이트를 이용할 때 필요한 정보를 쉽게 획득 가능하고,</p>
@@ -98,17 +100,17 @@
                     </div>
                     <!-- design guide -->
                     <div class="design_guide">
-                        <h2>design guide</h2>
+                        <h2 class="wow fadeInLeft">design guide</h2>
                         <!-- keyword -->
                         <div class="keyword">
-                            <h3>keyword</h3>
+                            <h3 class="wow fadeInLeft">keyword</h3>
                             <div class="keyword_box">
                                 <ul>
-                                    <li>	&#35; 재미있는</li>
-                                    <li>	&#35; 깔끔한</li>
-                                    <li>	&#35; 간단한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s">	&#35; 재미있는</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">	&#35; 깔끔한</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".9s">	&#35; 간단한</li>
                                 </ul>
-                                <p>브랜드의 정체성을 보여주는 <br>재미있는 요소들과 깔끔한 디자인</p>
+                                <p class="wow fadeInUp" data-wow-delay="1s">브랜드의 정체성을 보여주는 <br>재미있는 요소들과 깔끔한 디자인</p>
                             </div>
                         </div>
                         <!-- color -->
@@ -116,26 +118,26 @@
                             <h3>color</h3>
                             <div class="color_box">
                                 <ul>
-                                    <li>	&#35;fff</li>
-                                    <li>	&#35;000</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s">	&#35;fff</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">	&#35;000</li>
                                 </ul>
-                                <p>브랜드의 분위기와 깔끔한 그리드 스타일에 적합한<br>흰색, 검정색 사용</p>
+                                <p class="wow fadeInUp" data-wow-delay=".9s">브랜드의 분위기와 깔끔한 그리드 스타일에 적합한<br>흰색, 검정색 사용</p>
                             </div>
                         </div>
                         <!-- fonts -->
                         <div class="font">
-                            <h3>font</h3>
+                            <h3 class="wow fadeInUp">font</h3>
                             <div class="font_box">
-                                <ul>
+                                <ul class="wow fadeInUp">
                                     <li>NotoSans KR</li>
                                     <li>Poppins</li>
                                     <li>Caveat</li>
                                 </ul>
-                                <p>깔끔한 콘셉트와 잘 맞는 가독성 좋은 <br>NotoSans, Poppins 폰트와 <br>꾸밈용 Caveat 폰트 사용</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.3s">깔끔한 콘셉트와 잘 맞는 가독성 좋은 <br>NotoSans, Poppins 폰트와 <br>꾸밈용 Caveat 폰트 사용</p>
                             </div>
                         </div>
                         <!-- UI / UX design -->
-                        <div class="design">
+                        <div class="design wow fadeInLeft">
                             <h2>UI / UX design</h2>
                             <ul>
                                 <li>기존 쇼핑몰은 이미지로만 이루어져 로딩이 오래걸리고 취약계층이 정보를 얻기 어려움<br>가독성 좋은 깔끔한 폰트 사용과 여유로운 줄간격, 섹션 별로 그리드 스타일 적용 </li>
@@ -144,7 +146,7 @@
                             </ul>
                         </div>
                         <!-- publising -->
-                        <div class="publishing">
+                        <div class="publishing wow fadeInRight">
                             <h2>publishing</h2>
                             <ul>
                                 <li>웹표준, 접근성을 고려한 HTML 마크업 언어 구축</li>
@@ -181,5 +183,8 @@
                 <div class="gitblog_link"><a href="https://sinbhs.github.io" target="_blank"><img src="../../about/images/github.png" alt="github"><span>GitHub Blog</span></a></div>
             </footer>
         </div>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
