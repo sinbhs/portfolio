@@ -66,6 +66,7 @@ nav ul {display:none;}
 .container .contents article {display: flex; flex-direction: column; justify-content: center; position: relative;}
 .container .contents article h1 {display: none;}
 .container .contents article h1 span {color:transparent; color:#F9F8FA; text-shadow:-1px 0px #004be2, 0px 1px #004be2, 1px 0px #004be2, 0px -1px #004be2; -moz-text-shadow:-1px 0 #004be2, 0 1px #004be2, 1px 0 #004be2, 0 -1px #004be2; -webkit-text-shadow:-1px 0 #004be2, 0 1px #004be2, 1px 0 #004be2, 0 -1px #004be2;}
+.container .contents article .box .image .hover_box {display: none;}
 .container .contents article .box .image img {width: 100%;}
 .container .contents article .box .info {padding:20px 5.3333% 0;}
 .container .contents article .box .info p {font-size: 13px; text-transform: capitalize; margin:0 0 10px;}
@@ -98,8 +99,6 @@ footer .gitblog_link img {width:30px;}
 
     /* contents */
     .container .contents article h1 {top:50px; left:10.9375%; font-size: 35px;}
-    .container .contents article .box .image img {transition: 300ms ease;}
-    .container .contents article .box .image:hover img {transform: scale(1.05); box-shadow:0 20px 30px 0 rgba(65,58,58,.25); opacity: 0.9;}
     .container .contents article .box .image img {display:block; max-width: 800px; margin:0 auto;}
     .container .contents article .box .info {max-width:800px; padding:30px 0; margin: 0 auto;}
     .container .contents article .box .info p {font-size: 16px;}
@@ -159,6 +158,14 @@ footer .gitblog_link img {width:30px;}
     .container .contents article h1 span {padding-right:15px; color: #004be2; text-shadow: none;}
     .container .contents article .box {width:100%; height:100%; display:flex; align-items: center; padding:0 11.9791%; box-sizing: border-box;}
     .container .contents article .box .image, .container .contents article .box .info {width:50%; box-sizing: border-box;}
+        /* work img hover 효과 */
+        .container .contents article .box .image {position: relative;}
+        .container .contents article .box .image .hover_box {display: none; position: absolute; top: 0; left: 0; right: 0; background-color: transparent; width: 100%; height: 100%; opacity: 0; transition: all 0.3s ease-in-out;}
+        .container .contents article .box .image:hover .hover_box {display: block; background: linear-gradient(90deg, #999a9c 0%, #5d8df5 100%); opacity: 0.4;}
+        .image:before, .image:after {content:''; background: #fff; position: absolute; left: 50%; top: 50%; opacity: 0; z-index: 1; transform: translate(-50%, -50%); transition: all 0.4s ease;}
+        .image:before {width: 60px; height: 1px; left: 100%;}
+        .image:after {width: 1px; height: 60px; top: 0%;}
+        .image:hover:before, .image:hover:after {opacity: 1; left: 50%; top: 50%;}
     .container .contents article .box .image img {margin:0;}
     .container .contents article .box .info {width: 50%; padding:0 10.1098%;}
     .container .contents article .box .info h2 {font-size: 48px;}
