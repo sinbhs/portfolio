@@ -95,7 +95,6 @@ footer .gitblog_link img {width:30px;}
     /* header */
     nav {height:50px;}
     .menu_icon {top:11px;}
-    .overlay {display:none;}
 
     /* contents */
     .container .contents article h1 {top:50px; left:10.9375%; font-size: 35px;}
@@ -122,9 +121,10 @@ footer .gitblog_link img {width:30px;}
     /* header */
     header {border-bottom:none; background-color:transparent; padding:15px 0;}
     header.scroll-down nav {background-color: transparent;}
-    nav ul {display: block;}
-
+    .overlay {display: none;}
+    
     /* nav_list .gnb */
+    nav ul {display: block;}
     nav ul {padding:0; margin:0; list-style:none; display: flex;}
     nav ul li a {color:#000; position: relative; display:inline-block;margin-left:30px;}
 
